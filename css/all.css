@@ -1,0 +1,111 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'andantino';
+  src: url("fonts/andantino.eot");
+  src: url("fonts/andantino.eot?#iefix") format("embedded-opentype"), url("fonts/andantino.woff2") format("woff2"), url("fonts/andantino.woff") format("woff"), url("fonts/andantino.ttf") format("truetype"), url("fonts/andantino.svg#andantino") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myriad';
+  src: url("fonts/MyriadProRegular.eot");
+  src: url("fonts/MyriadProRegular.eot") format("embedded-opentype"), url("fonts/MyriadProRegular.woff2") format("woff2"), url("fonts/MyriadProRegular.woff") format("woff"), url("fonts/MyriadProRegular.ttf") format("truetype"), url("fonts/MyriadProRegular.svg#MyriadProRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myriadsemibold';
+  src: url("fonts/myriadprosemibold.eot");
+  src: url("fonts/myriadprosemibold.eot") format("embedded-opentype"), url("fonts/myriadprosemibold.woff2") format("woff2"), url("fonts/myriadprosemibold.woff") format("woff"), url("fonts/myriadprosemibold.ttf") format("truetype"), url("fonts/myriadprosemibold.svg#myriadprosemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: url("../image/bac.jpg") #ffffff;
+  font-family: myriad, helvetica, arial, sans-serif;
+  color: #040404;
+  font-size: 14px;
+}
+
+.inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  overflow: hidden;
+}
+.header_logo {
+  display: block;
+  float: left;
+  background: url("../image/logo.png") no-repeat;
+  width: 137px;
+  height: 118px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header_center {
+  float: left;
+}
+.header_info {
+  float: left;
+}
+
+/*# sourceMappingURL=all.css.map */

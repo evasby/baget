@@ -1,0 +1,19 @@
+.header{
+  overflow: hidden;
+  &_logo{
+    display: block;
+    float: left;
+    background: url('../image/logo.png') no-repeat;
+    width: 137px;
+    height: 118px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &_center{
+    float: left;
+  }
+  &_info{
+    float: left;
+  }
+}
