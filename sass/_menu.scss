@@ -1,0 +1,43 @@
+.menu{
+  background-color: #6b1740;
+  padding: 0px 20px 0px 20px;
+  &_list{
+    display: table;
+    width: 100%;
+    @include old-ie{
+      *display: block;
+    }
+  }
+  &_item{
+    display: table-cell;
+    @include old-ie{
+      *display: block;
+      *float: left;
+    }
+  }
+  &_link{
+    font-family: helvetica;
+    font-size: 16px;
+    text-decoration: none;
+    @include def-link-colors(#fdfcfb, #fdfcfb, #fdfcfb, #fdfcfb, #fdfcfb);
+    display: block;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    @include def-transition(all, 0.2s);
+    &__active{
+      background-color: #b18741;
+      -webkit-box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,1);
+      -moz-box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,1);
+    }
+    &:hover{
+      background-color: #b18741;
+      -webkit-box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,1);
+      -moz-box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,1);
+    }
+    @include old-ie{
+      *padding: 10px 20px 10px 20px;
+    }
+  }
+}

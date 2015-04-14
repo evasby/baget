@@ -5,6 +5,7 @@
 body{
   background: url('../image/bac.jpg') #ffffff;
   font-family: myriad, helvetica, arial, sans-serif;
+  //font-family: helvetica, arial, sans-serif;
   color: #040404;
   font-size: 14px;
 }
@@ -13,3 +14,6 @@ body{
 //**********************************************************/
 @import "inner";
 @import "header";
+@import "hmenu";
+@import "menu";
+@import "follow";

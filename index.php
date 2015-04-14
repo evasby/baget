@@ -23,7 +23,7 @@
     <header class="header">
       <a href="/" class="header_logo">БелБагетМастер</a>
       <div class="header_center">
-        <div class="header_slang"><p>Рамки на заказ в Минске</p></div>
+        <div class="header_slang"></div>
         <div class="hmenu">
           <ul class="hmenu_list">
             <li class="hmenu_item">
@@ -49,8 +49,6 @@
         <div class="header_sub">
           <p>Институт культуры</p>
           <p>Пушкинская</p>
-          <p>Институт культуры</p>
-          <p>Пушкинская</p>
         </div>
         <div class="header_time">
           <p>Звоните нам по будним</p>
@@ -61,25 +59,25 @@
     <nav class="menu">
       <ul class="menu_list">
         <li class="menu_item">
-          <a href="#" class="menu_link">Главная</a>
+          <a href="#" class="menu_link menu_link__active">главная</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">О компании</a>
+          <a href="#" class="menu_link">о компании</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">Услуги</a>
+          <a href="#" class="menu_link">услуги</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">Каталог багета</a>
+          <a href="#" class="menu_link">каталог багета</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">Галерея работ</a>
+          <a href="#" class="menu_link">галерея работ</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">Дисконтная программа</a>
+          <a href="#" class="menu_link">дисконтная программа</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">Контакты</a>
+          <a href="#" class="menu_link">контакты</a>
         </li>
       </ul>
     </nav>
@@ -96,7 +94,17 @@
       
     </div>
     <footer class="footer">
-      
+      <div class="follow">
+        <div class="follow_title">Следуйте за нами</div>
+        <div class="follow_list">
+          <div class="follow_item"><a href="#" class="follow_link follow_link_vk">Вконтакте</a></div>
+          <div class="follow_item"><a href="#" class="follow_link follow_link_ok">Одноклассники</a></div>
+          <div class="follow_item"><a href="#" class="follow_link follow_link_fb">Facebook</a></div>
+          <div class="follow_item"><a href="#" class="follow_link follow_link_ig">Instagram</a></div>
+          <div class="follow_item"><a href="#" class="follow_link follow_link_tt">Twitter</a></div>
+          <div class="follow_item"><a href="#" class="follow_link follow_link_yt">Наше видео</a></div>
+        </div>
+      </div>
     </footer>
   </div>
 </body>

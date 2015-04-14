@@ -1,7 +1,9 @@
 .header{
   overflow: hidden;
+  padding: 34px 0px 15px 0px;
   &_logo{
     display: block;
+    margin: 0px 0px 0px 22px;
     float: left;
     background: url('../image/logo.png') no-repeat;
     width: 137px;
@@ -11,9 +13,65 @@
     overflow: hidden;
   }
   &_center{
+    margin: 0px 0px 0px 38px;
     float: left;
+    width: 535px;
+    //background-color: #999999;
   }
   &_info{
+    margin: 0px 0px 0px 56px;
     float: left;
+  }
+  &_slang{
+    width: 369px;
+    height: 58px;
+    background: url('../image/slang.png') no-repeat;
+    margin: 10px auto 0px auto;
+  }
+  &_phone{
+    padding: 0px 0px 11px 0px;
+    p{
+      color: #333333;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+  }
+  &_sub{
+    padding: 0px 0px 11px 0px;
+    p{
+      position: relative;
+      padding-left: 20px;
+      color: #333333;
+      line-height: 1.1;
+      &:before{
+        background: url("../image/sub.png") 0px 0px no-repeat;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 12px;
+        position: absolute;
+        left: -1px;
+        top: 2px;
+      }
+      @include old-ie{
+        *zoom: expression(
+          this.runtimeStyle.zoom="1",
+          this.appendChild( document.createElement("small") ).className="before"
+        );
+        .before{
+          background: url("../image/sub.png") 0px 0px no-repeat;
+          width: 20px;
+          height: 12px;      
+          position: absolute;
+          left: -1px;
+          top: 2px; 
+        }
+      }
+    }
+  }
+  &_time{
+    p{
+      line-height: 1.1;
+    }
   }
 }
