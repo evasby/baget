@@ -1,4 +1,5 @@
 .follow{
+  margin-bottom: 13px;
   &_title{
     font-family: arial;
     padding: 0px 0px 17px 25px;
@@ -7,15 +8,126 @@
   }
   &_list{
     background-color: #ebebeb;
-    overflow: hidden;
+    padding: 8px 85px 10px 90px;
+    //overflow: hidden;
+    text-align: justify;
+    line-height: 0;
+    font-size: 1px;
+    @include old-ie{
+      text-justify: newspaper;
+      zoom:1;
+    }
+    text-align-last: justify;
+    &:after{
+      width: 100%;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block;
+    }
   }
   &_item{
-    float: left;
+    //float: left;
+    display: inline-block;
+    text-align: left;
+    line-height: normal;
+    font-size: 14px;
+    vertical-align: top;
+    @include old-ie{
+      *display : inline;
+      *zoom : 1;
+    }
   }
   &_link{
+    position: relative;
     font-family: arial;
     font-size: 11px;
     @include def-link-colors(#4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a);
     text-decoration: none;
+    &:before{
+      background: url("../image/social.png") 20px 0px no-repeat;
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 19px;
+      position: absolute;
+      left: -32px;
+      top: -2px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="before"
+      );
+      .before{
+        background: url("../image/social.png") 20px 0px no-repeat;
+        width: 20px;
+        height: 19px;        
+        position: absolute;
+        left: -32px;
+        top: -2px;   
+      }
+      &__vk{
+        .before{
+          background-position: 0px 0px;
+        }
+      }
+      &__ok{
+        .before{
+          background-position: -20px 0px;
+        }
+      }
+      &__fb{
+        .before{
+          background-position: -40px 0px;
+        }
+      }
+      &__ig{
+        .before{
+          background-position: -60px 0px;
+        }
+      }
+      &__tt{
+        .before{
+          background-position: -80px 0px;
+        }
+      }
+      &__yt{
+        .before{
+          background-position: -100px 0px;
+        }
+      }
+    }
+    &__vk{
+      &:before{
+        background-position: 0px 0px;
+      }
+    }
+    &__ok{
+      &:before{
+        background-position: -20px 0px;
+      }
+    }
+    &__fb{
+      &:before{
+        background-position: -40px 0px;
+      }
+    }
+    &__ig{
+      &:before{
+        background-position: -60px 0px;
+      }
+    }
+    &__tt{
+      &:before{
+        background-position: -80px 0px;
+      }
+    }
+    &__yt{
+      &:before{
+        background-position: -100px 0px;
+      }
+    }
   }
 }

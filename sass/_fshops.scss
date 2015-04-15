@@ -1,0 +1,56 @@
+.fshops{
+  float: left;
+  width: 220px;
+  margin: 0px 0px 0px 55px;
+  &_title{
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &_city{
+    font-family: arial;
+    font-size: 11px;
+    color: #333333;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  &_item{
+    padding-left: 20px;
+    padding-bottom: 5px;
+    p{
+      position: relative;
+      line-height: 1.5;
+      font-family: arial;
+      font-size: 11px;
+      color: #333333;
+      &:first-child{
+        font-weight: bold;
+        @include old-ie{
+          *zoom: expression(
+            this.runtimeStyle.zoom="1",
+            this.appendChild( document.createElement("small") ).className="before"
+          );
+          .before{
+            background: url("../image/sub.png") 0px 0px no-repeat;
+            width: 20px;
+            height: 12px;        
+            position: absolute;
+            left: -21px;
+            top: 2px;   
+          }
+        }
+      }
+      &:first-child:before{
+        background: url("../image/sub.png") 0px 0px no-repeat;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 12px;
+        position: absolute;
+        left: -21px;
+        top: 1px;
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.fcontacts{
+  float: left;
+  margin: 0px 0px 0px 25px;
+  &_title{
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &_phone{
+    padding: 0px 0px 0px 22px;
+    p{
+      color: #333;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+  }
+  &_email{
+    padding: 0px 0px 10px 22px;
+    a{
+      font-family: arial;
+      font-size: 15px;
+      @include def-link-colors(#333, #333, #333, #333, #333);
+      text-decoration: none;
+      position: relative;
+      &:before{
+        background: url("../image/email.png") 0px 0px no-repeat;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        position: absolute;
+        left: -25px;
+        top: 2px;
+      }
+      @include old-ie{
+        *zoom: expression(
+          this.runtimeStyle.zoom="1",
+          this.appendChild( document.createElement("small") ).className="before"
+        );
+        .before{
+          background: url("../image/email.png") 0px 0px no-repeat;
+          width: 20px;
+          height: 15px;        
+          position: absolute;
+          left: -25px;
+          top: 2px;   
+        }
+      }
+    }
+    p{
+      font-family: arial;
+      font-size: 15px;
+      color: #333;
+    }
+  }
+  &_skype{
+    padding: 0px 0px 0px 22px;
+    p{
+      font-family: arial;
+      font-size: 15px;
+      color: #333;
+    }
+  }
+}

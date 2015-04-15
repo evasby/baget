@@ -1,0 +1,48 @@
+.fmenu2{
+  float: left;
+  width: 195px;
+  margin: 0px 0px 0px 40px;
+  &_title{
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &_descr{
+    p{
+      font-family: arial;
+      font-size: 11px;
+      color: #4b4a4a;
+      line-height: 1.8;
+      margin-bottom: 5px;
+    }
+  }
+  &_item{
+    margin-bottom: 7px;
+  }
+  &_link{
+    position: relative;
+    font-family: arial;
+    font-style: italic;
+    font-size: 11px;
+    @include def-link-colors(#333, #333, #333, #333, #333);
+    text-decoration: none;
+    &:after{
+      display: inline;
+      content: " >";
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="after"
+      );
+      .after{
+        background: url("../image/arrow-r.png") 0px 0px no-repeat;
+        width: 7px;
+        height: 6px;        
+        position: absolute;
+        right: -10px;
+        top: 3px;   
+      }
+    }
+  }
+}

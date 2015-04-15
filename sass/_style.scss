@@ -1,4 +1,5 @@
 ﻿@import "mymix";
+@import "bxslider";
 @import "fonts";
 //**********************************************************/
 //**********************************************************/
@@ -7,7 +8,7 @@ body{
   font-family: myriad, helvetica, arial, sans-serif;
   //font-family: helvetica, arial, sans-serif;
   color: #040404;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 //**********************************************************/
@@ -16,4 +17,11 @@ body{
 @import "header";
 @import "hmenu";
 @import "menu";
+@import "content";
+@import "footer";
 @import "follow";
+@import "fmenu";
+@import "fmenu2";
+@import "fshops";
+@import "fcontacts";
+@import "wf";

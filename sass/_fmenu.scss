@@ -1,0 +1,19 @@
+.fmenu{
+  float: left;
+  width: 170px;
+  margin: 0px 0px 0px 75px;
+  &_title{
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &_item{
+    margin-bottom: 7px;
+  }
+  &_link{
+    font-family: arial;
+    font-size: 11px;
+    @include def-link-colors(#4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a);
+    text-decoration: none;
+  }
+}
