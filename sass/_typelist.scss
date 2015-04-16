@@ -1,0 +1,24 @@
+.typelist{
+  padding: 16px 0px 16px 0px;
+  overflow: hidden;
+  &_item{
+    font-family: myriadsemibold;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include def-border-radiuses(0px, 5px, 5px, 0px);
+    @include def-link-colors(#5a5a59, #5a5a59, #5a5a59, #5a5a59, #5a5a59);
+    display: block;
+    padding: 15px 0px 15px 0px;
+    width: 32.4%;
+    float: left;
+    text-align: center;
+    border-left: 2px solid #d9bd90;
+    border-right: 2px solid #d9bd90;
+    border-bottom: 2px solid #d9bd90;
+    margin-left: 7px;
+    &:first-child{
+      margin-left: 0px;
+    }
+  }
+}

@@ -10,7 +10,12 @@ body{
   color: #040404;
   font-size: 15px;
 }
-
+h1{
+  font-family: myriadsemibold;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: #caa466;
+}
 //**********************************************************/
 //**********************************************************/
 @import "inner";
@@ -18,6 +23,12 @@ body{
 @import "hmenu";
 @import "menu";
 @import "content";
+@import "typelist";
+@import "search";
+@import "catalogwidth";
+@import "icons";
+@import "quickmenu";
+@import "counter";
 @import "footer";
 @import "follow";
 @import "fmenu";

@@ -1,0 +1,10 @@
+.catalogwidth{
+  &_wrap{
+    overflow: hidden;
+  }
+  &_item{
+    width: 212px;
+    height: 171px;
+    float: left;
+  }
+}

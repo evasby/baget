@@ -1,0 +1,38 @@
+.search{
+  background-color: #f3f2ed;
+  margin: 0px -23px 0px -23px;
+  padding: 3px 103px 3px 23px;
+  overflow: hidden;
+  &_wrap{
+    float: left;
+    border: 1px solid #b6b6b6;
+    @include def-border-radius(3px);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  &_link{
+    float: right;
+    @include def-link-colors(#7e7a6c, #7e7a6c, #7e7a6c, #7e7a6c, #7e7a6c);
+    font-family: arial;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+  input{
+    border: none;
+    width: 275px;
+    height: 22px;
+  }
+  button{
+    border: none;
+    padding: 0px;
+    width: 30px;
+    height: 100%;
+    background: url('../image/search.png') #ffffff no-repeat 50% 50%;
+    text-indent: 9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

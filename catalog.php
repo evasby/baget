@@ -71,7 +71,7 @@
     <nav class="menu">
       <ul class="menu_list">
         <li class="menu_item">
-          <a href="#" class="menu_link menu_link__active">главная</a>
+          <a href="#" class="menu_link">главная</a>
         </li>
         <li class="menu_item">
           <a href="#" class="menu_link">о компании</a>
@@ -80,7 +80,7 @@
           <a href="#" class="menu_link">услуги</a>
         </li>
         <li class="menu_item">
-          <a href="catalog.php" class="menu_link">каталог багета</a>
+          <a href="#" class="menu_link menu_link__active">каталог багета</a>
         </li>
         <li class="menu_item">
           <a href="#" class="menu_link">галерея работ</a>
@@ -103,58 +103,79 @@
           <li><img src="/image/slider/slide5.jpg" /></li>
         </ul>
       </div>
-      <div class="icons">
-        <div class="icons_item">
-          <img src="image/icons/icon1.png" alt="" class="icons_image">
-          <div class="icons_text">Самый большой выбор багета более 1200 видов</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon2.png" alt="" class="icons_image">
-          <div class="icons_text">Оформление любой сложности</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon3.png" alt="" class="icons_image">
-          <div class="icons_text">Дизайнеры и мастера с многолетним опытом работы</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon4.png" alt="" class="icons_image">
-          <div class="icons_text">Лучшее соотношение цены и качества</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon5.png" alt="" class="icons_image">
-          <div class="icons_text">Удобное расположение наших багетных мастерских</div>
+      <div class="typelist">
+        <a href="#" class="typelist_item">Деревянный багет</a>
+        <a href="#" class="typelist_item">Пластиковый багет</a>
+        <a href="#" class="typelist_item">Алюминиевый багет</a>
+      </div>
+      <div class="search">
+        <a href="" class="search_link">Расширенный поиск >></a>
+        <div class="search_wrap">
+          <form action="#">
+            <input type="text">
+            <button type="submit">Искать</button>
+          </form>  
         </div>
       </div>
-      <div class="quickmenu">
-        <a href="#" class="quickmenu_item">
-          <img src="image/quick/quick1.jpg" alt="" class="quickmenu_image">
-          <div class="quickmenu_text">
-            <div class="quickmenu_title">Каталог багета</div>
-            <div class="quickmenu_descr">Дерево, пластик, алюминий</div>
-            <div class="quickmenu_wrap quickmenu_wrap__1"></div>
+      <div class="title"><h1>Каталог багета</h1></div>
+      <section class="catalogwidth">
+        <div class="catalogwidth_title">Ширина 10-30 мм.</div>
+        <div class="catalogwidth_wrap">
+          <div class="catalogwidth_item">
+            <img src="image/catalog/1.jpg" alt="">
           </div>
-        </a>
-        <a href="#" class="quickmenu_item">
-          <img src="image/quick/quick2.jpg" alt="" class="quickmenu_image">
-          <div class="quickmenu_text">
-            <div class="quickmenu_title">Рамки на заказ</div>
-            <div class="quickmenu_descr">Багетное оформление работ</div>
-            <div class="quickmenu_wrap quickmenu_wrap__2"></div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/2.jpg" alt="">
           </div>
-        </a>
-        <a href="#" class="quickmenu_item">
-          <img src="image/quick/quick3.jpg" alt="" class="quickmenu_image">
-          <div class="quickmenu_text">
-            <div class="quickmenu_title">Купить выгодно</div>
-            <div class="quickmenu_descr">Акция</div>
-            <div class="quickmenu_wrap quickmenu_wrap__3"></div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/3.jpg" alt="">
           </div>
-        </a>
-      </div>
-      <div class="counter">
-        <p>Нам доверяют более 3 420 постоянных клиентов, за 8 лет мы оформили 927 100 заказов</p>
-        <a href="/about" class="counter_link">о компании>></a>
-      </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/4.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/5.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/6.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/7.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/8.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="catalogwidth">
+        <div class="catalogwidth_title">Ширина 30-60 мм.</div>
+        <div class="catalogwidth_wrap">
+          <div class="catalogwidth_item">
+            <img src="image/catalog/9.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/10.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/11.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/12.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/13.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/14.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/15.jpg" alt="">
+          </div>
+          <div class="catalogwidth_item">
+            <img src="image/catalog/16.jpg" alt="">
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="follow">
