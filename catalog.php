@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <title>Baget</title>
   <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" media="all" type="text/css" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jQuery.GI.TheWall.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js"></script>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -27,7 +30,24 @@
         nextText: 'Onward →',
         prevText: '← Go back'*/
       });
+      //$('.GITheWall').GITheWall();
+      //$('.GITheWall2').GITheWall();
+      var wall = $('.GITheWall').GITheWall({
+        animationSpeed: 300,
+        arrows: true,
+        nextButtonClass: 'wall_right',
+        prevButtonClass: 'wall_left',
+        closeButtonClass: 'wall_close',
+        initialWrapperHeight: 360,
+        dynamicHeight: false,
+        autoscroll: false,
+        margin: {
+          top: 3,
+          bottom: 0
+        }
+      });
     });
+    hljs.initHighlightingOnLoad();
   </script>
 </head>
 <body>
@@ -112,69 +132,129 @@
         <a href="" class="search_link">Расширенный поиск >></a>
         <div class="search_wrap">
           <form action="#">
-            <input type="text">
+            <input type="text" placeholder="Поиск">
             <button type="submit">Искать</button>
           </form>  
         </div>
       </div>
       <div class="title"><h1>Каталог багета</h1></div>
-      <section class="catalogwidth">
+      <!--<section class="catalogwidth">
         <div class="catalogwidth_title">Ширина 10-30 мм.</div>
-        <div class="catalogwidth_wrap">
-          <div class="catalogwidth_item">
-            <img src="image/catalog/1.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/2.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/3.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/4.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/5.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/6.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/7.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/8.jpg" alt="">
-          </div>
+        <div class="catalogwidth_wrap GITheWall">
+          <ul>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/1.jpg">
+              <img src="image/catalog/2.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/2.jpg">
+              <img src="image/catalog/2.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/3.jpg">
+              <img src="image/catalog/3.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/4.jpg">
+              <img src="image/catalog/4.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/5.jpg">
+              <img src="image/catalog/5.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/6.jpg"">
+              <img src="image/catalog/6.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/7.jpg">
+              <img src="image/catalog/7.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/8.jpg">
+              <img src="image/catalog/8.jpg" alt="">
+            </li>
+          </ul>
         </div>
       </section>
       <section class="catalogwidth">
         <div class="catalogwidth_title">Ширина 30-60 мм.</div>
-        <div class="catalogwidth_wrap">
-          <div class="catalogwidth_item">
-            <img src="image/catalog/9.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/10.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/11.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/12.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/13.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/14.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/15.jpg" alt="">
-          </div>
-          <div class="catalogwidth_item">
-            <img src="image/catalog/16.jpg" alt="">
-          </div>
+        <div class="catalogwidth_wrap GITheWall2">
+          <ul>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/9.jpg">
+              <img src="image/catalog/9.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/10.jpg">
+              <img src="image/catalog/10.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/11.jpg">
+              <img src="image/catalog/11.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/12.jpg">
+              <img src="image/catalog/12.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/13.jpg">
+              <img src="image/catalog/13.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/14.jpg">
+              <img src="image/catalog/14.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/15.jpg">
+              <img src="image/catalog/15.jpg" alt="">
+            </li>
+            <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/16.jpg">
+              <img src="image/catalog/16.jpg" alt="">
+            </li>
+          </ul>
         </div>
+      </section>-->
+      <section class="catalogwidth GITheWall">
+        <ul class="catalogwidth_list">
+          <div class="catalogwidth_title">ШИРИНА 10-30 мм.</div>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/1b.jpg">
+            <img src="image/catalog/1b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/2b.jpg">
+            <img src="image/catalog/2b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/3b.jpg">
+            <img src="image/catalog/3b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/4b.jpg">
+            <img src="image/catalog/4b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/5b.jpg">
+            <img src="image/catalog/5b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/6b.jpg">
+            <img src="image/catalog/6b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/7b.jpg">
+            <img src="image/catalog/7b.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/8b.jpg">
+            <img src="image/catalog/8b.jpg" alt="">
+          </li>
+          <div class="catalogwidth_more"><a href="#">Смотреть все багеты с шириной 10-30 мм.>></a></div>
+          <div class="catalogwidth_title">ШИРИНА 30-60 мм.</div>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/9.jpg">
+            <img src="image/catalog/9.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/10.jpg">
+            <img src="image/catalog/10.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/11.jpg">
+            <img src="image/catalog/11.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/12.jpg">
+            <img src="image/catalog/12.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/13.jpg">
+            <img src="image/catalog/13.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/14.jpg">
+            <img src="image/catalog/14.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/15.jpg">
+            <img src="image/catalog/15.jpg" alt="">
+          </li>
+          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/16.jpg">
+            <img src="image/catalog/16.jpg" alt="">
+          </li>
+          <div class="catalogwidth_more"><a href="#">Смотреть все багеты с шириной 30-60 мм.>></a></div>
+        </ul>
       </section>
     </div>
     <footer class="footer">

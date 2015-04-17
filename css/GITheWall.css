@@ -29,20 +29,20 @@
  *  </div>
  *
  */
-.wall ul {
+.GITheWall ul {
   list-style: none;
   padding: 20px 0;
   margin: 0 auto;
   text-align: left;
   width: 100%;
 }
-.wall ul li {
+.GITheWall ul li {
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
   width: 200px;
 }
-.wall ul li.GI_TW_Selected_Row {
+.GITheWall ul li.GI_TW_Selected_Row {
   -webkit-transition: margin-bottom 0.3s ease-in;
   -moz-transition: margin-bottom 0.3s ease-in;
   -o-transition: margin-bottom 0.3s ease-in;
