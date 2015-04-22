@@ -1,0 +1,59 @@
+.catitem {
+  font-family: arial;
+  position: relative;
+  width: 100%;
+  height: 580px;
+  margin: 10px 0 0;
+  //text-align: center;
+  padding-left: 30px;
+  overflow: hidden;
+  &_image{
+    width: 437px;
+    height: 352px;
+    float: left;
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &_text{
+    width: 437px;
+    float: left;
+    margin-left: 13px;
+  }
+  &_title{
+    text-align: center;
+    color: #3e3e3e;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 16px;
+  }
+  &_art{
+    text-align: center;
+    padding: 7px 0px 23px 0px;
+    font-size: 12px;
+  }
+  &_descr{
+    padding: 0px 23px 0px 23px;
+    height: 170px;
+    p{
+      font-family: arial;
+      line-height: 1.2;
+    }
+  }
+  &_link{
+    display: block;
+    padding: 6px 0px;
+    width: 280px;
+    margin: 0 auto;
+    @include link(#3e3e3e, #3e3e3e);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #e3e2e1;
+    text-align: center;
+    @include def-border-radius(3px);
+  }
+}

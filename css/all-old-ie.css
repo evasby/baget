@@ -283,14 +283,17 @@ ul.bxslider {
   background: url("../image/close.png") no-repeat;
 }
 .wall_left {
+  display: block;
   width: 13px;
   height: 28px;
   background: url("../image/arrows-catalog.png") no-repeat;
 }
 .wall_right {
+  display: block;
   width: 13px;
   height: 28px;
   background: url("../image/arrows-catalog.png") no-repeat;
+  background-position: -13px 0px;
 }
 
 /**
@@ -429,15 +432,15 @@ ul.bxslider {
 }
 
 .GI_TW_expander .GI_TW_arrow.GI_TW_hidden {
-  display: block;
+  display: none;
 }
 
 .GI_TW_expander .GI_TW_arrow.GI_TW_next {
-  right: 30px;
+  right: 0px;
 }
 
 .GI_TW_expander .GI_TW_arrow.GI_TW_prev {
-  left: 30px;
+  left: 0px;
 }
 
 /*.GI_TW_expander .GI_TW_loading {
@@ -555,6 +558,10 @@ h1 {
   font-size: 19px;
   color: #caa466;
   padding: 30px 0px 20px 0px;
+}
+
+.hide {
+  display: none;
 }
 
 .inner {
@@ -880,6 +887,79 @@ h1 {
 }
 .search button:hover {
   cursor: pointer;
+}
+
+.catitem {
+  font-family: arial;
+  position: relative;
+  width: 100%;
+  height: 580px;
+  margin: 10px 0 0;
+  padding-left: 30px;
+  overflow: hidden;
+}
+.catitem_image {
+  width: 437px;
+  height: 352px;
+  float: left;
+}
+.catitem_image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.catitem_text {
+  width: 437px;
+  float: left;
+  margin-left: 13px;
+}
+.catitem_title {
+  text-align: center;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 16px;
+}
+.catitem_art {
+  text-align: center;
+  padding: 7px 0px 23px 0px;
+  font-size: 12px;
+}
+.catitem_descr {
+  padding: 0px 23px 0px 23px;
+  height: 170px;
+}
+.catitem_descr p {
+  font-family: arial;
+  line-height: 1.2;
+}
+.catitem_link {
+  display: block;
+  padding: 6px 0px;
+  width: 280px;
+  margin: 0 auto;
+  color: #3e3e3e;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #e3e2e1;
+  text-align: center;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.catitem_link:visited {
+  color: #3e3e3e;
+}
+.catitem_link:hover {
+  color: #3e3e3e;
+}
+.catitem_link:active {
+  color: #3e3e3e;
+}
+.catitem_link:focus {
+  color: #3e3e3e;
 }
 
 .catalogwidth {

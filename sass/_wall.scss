@@ -6,14 +6,17 @@
     background: url('../image/close.png') no-repeat;
   }
   &_left{
+    display: block;
     width: 13px;
     height: 28px;
     background: url('../image/arrows-catalog.png') no-repeat;
   }
   &_right{
+    display: block;
     width: 13px;
     height: 28px;
     background: url('../image/arrows-catalog.png') no-repeat;
+    background-position: -13px 0px;
   }
 }
 /**
@@ -146,14 +149,13 @@
   cursor: pointer;
 }
 .GI_TW_expander .GI_TW_arrow.GI_TW_hidden {
-  //display: none;
-  display: block;
+  display: none;
 }
 .GI_TW_expander .GI_TW_arrow.GI_TW_next {
-  right: 30px;
+  right: 0px;
 }
 .GI_TW_expander .GI_TW_arrow.GI_TW_prev {
-  left: 30px;
+  left: 0px;
 }
 /*.GI_TW_expander .GI_TW_loading {
   width: 20px;
