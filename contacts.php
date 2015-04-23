@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <title>Baget</title>
   <link rel="stylesheet" type="text/css" href="css/all.css">
+  
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -21,13 +23,24 @@
   <![endif]-->
   <script>
     $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        /*nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: 'Onward →',
-        prevText: '← Go back'*/
+      var slider;
+      var slidermin;
+      slidermin = $('.cslidermin_list').bxSlider({
+        pagerCustom: '.cslidermin_pager',
+        controls: false,
+        //mode: 'fade'
       });
+      slider = $('.bxslider').bxSlider({
+        pagerCustom: '#bx-pager',
+        controls: false,
+        mode: 'fade',
+        onSlideAfter: function(){
+        }
+      });
+      
+      
     });
+    
   </script>
 </head>
 <body>
@@ -71,7 +84,7 @@
     <nav class="menu">
       <ul class="menu_list">
         <li class="menu_item">
-          <a href="#" class="menu_link menu_link__active">главная</a>
+          <a href="/" class="menu_link">главная</a>
         </li>
         <li class="menu_item">
           <a href="#" class="menu_link">о компании</a>
@@ -89,71 +102,115 @@
           <a href="#" class="menu_link">дисконтная программа</a>
         </li>
         <li class="menu_item">
-          <a href="contacts.php" class="menu_link">контакты</a>
+          <a href="contacts.php" class="menu_link menu_link__active">контакты</a>
         </li>
       </ul>
     </nav>
     <div class="content">
-      <div class="slider">
-        <ul class="bxslider">
-          <li><img src="/image/slider/slide1.jpg" /></li>
-          <li><img src="/image/slider/slide2.jpg" /></li>
-          <li><img src="/image/slider/slide3.jpg" /></li>
-          <li><img src="/image/slider/slide4.jpg" /></li>
-          <li><img src="/image/slider/slide5.jpg" /></li>
-        </ul>
-      </div>
-      <div class="icons">
-        <div class="icons_item">
-          <img src="image/icons/icon1.png" alt="" class="icons_image">
-          <div class="icons_text">Самый большой выбор багета более 1200 видов</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon2.png" alt="" class="icons_image">
-          <div class="icons_text">Оформление любой сложности</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon3.png" alt="" class="icons_image">
-          <div class="icons_text">Дизайнеры и мастера с многолетним опытом работы</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon4.png" alt="" class="icons_image">
-          <div class="icons_text">Лучшее соотношение цены и качества</div>
-        </div>
-        <div class="icons_item">
-          <img src="image/icons/icon5.png" alt="" class="icons_image">
-          <div class="icons_text">Удобное расположение наших багетных мастерских</div>
-        </div>
-      </div>
-      <div class="quickmenu">
-        <a href="catalog.php" class="quickmenu_item">
-          <img src="image/quick/quick1.jpg" alt="" class="quickmenu_image">
-          <div class="quickmenu_text">
-            <div class="quickmenu_title">Каталог багета</div>
-            <div class="quickmenu_descr">Дерево, пластик, алюминий</div>
-            <div class="quickmenu_wrap quickmenu_wrap__1"></div>
+      <div class="title"><h1>Контакты</h1></div>
+      <div class="contacts">
+        <div class="contacts_row">
+          <div class="contacts_item">
+            <ul id="bx-pager">
+              <li><a href="" data-slide-index="0">Институт культуры</a></li>
+              <li><a href="" data-slide-index="1">Пушкинская</a></li>
+              <li><a href="" data-slide-index="2">Институт культуры</a></li>
+              <li><a href="" data-slide-index="3">Пушкинская</a></li>
+            </ul>
           </div>
-        </a>
-        <a href="#" class="quickmenu_item">
-          <img src="image/quick/quick2.jpg" alt="" class="quickmenu_image">
-          <div class="quickmenu_text">
-            <div class="quickmenu_title">Рамки на заказ</div>
-            <div class="quickmenu_descr">Багетное оформление работ</div>
-            <div class="quickmenu_wrap quickmenu_wrap__2"></div>
+          <div class="contacts_item">
+            <div class="cslider">
+              <ul class="bxslider">
+                <li>
+                  <div class="cslidermin">
+                    <div class="cslidermin_title">Время работы с 10.00 до 20.00</div>
+                    <ul class="cslidermin_list">
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                    </ul>
+                    <div class="cslidermin_pager">
+                      <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cslidermin">
+                    <div class="cslidermin_title">Время работы с 11.00 до 20.00</div>
+                    <ul class="cslidermin_list">
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                    </ul>
+                    <div class="cslidermin_pager">
+                      <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cslidermin">
+                    <div class="cslidermin_title">Время работы с 12.00 до 20.00</div>
+                    <ul class="cslidermin_list">
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                    </ul>
+                    <div class="cslidermin_pager">
+                      <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cslidermin">
+                    <div class="cslidermin_title">Время работы с 13.00 до 20.00</div>
+                    <ul class="cslidermin_list">
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                      <li>
+                        <img src="/image/slide.jpg" />
+                      </li>
+                    </ul>
+                    <div class="cslidermin_pager">
+                      <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
+                      <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </a>
-        <a href="#" class="quickmenu_item">
-          <img src="image/quick/quick3.jpg" alt="" class="quickmenu_image">
-          <div class="quickmenu_text">
-            <div class="quickmenu_title">Купить выгодно</div>
-            <div class="quickmenu_descr">Акция</div>
-            <div class="quickmenu_wrap quickmenu_wrap__3"></div>
-          </div>
-        </a>
-      </div>
-      <div class="counter">
-        <p>Нам доверяют более 3 420 постоянных клиентов, за 8 лет мы оформили 927 100 заказов</p>
-        <a href="/about" class="counter_link">о компании>></a>
+          <div class="contacts_item">map</div>
+        </div>
+        <div class="contacts_row"></div>
       </div>
     </div>
     <footer class="footer">

@@ -1,0 +1,20 @@
+.cslidermin{
+  &_pager{
+    overflow: hidden;
+    img{
+      display: block;
+      border: 1px solid #fdfcfb;
+      float: left;
+      margin: 4px 0px 0px 8px;
+      width: 85px;
+      height: 82px;
+      @include def-transition(border-color, 0.2s);
+    }
+    & a:first-child img{
+      margin: 4px 0px 0px 0px;
+    }
+    & .active img{
+      border: 1px solid #6b1740;
+    }
+  }
+}

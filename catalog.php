@@ -30,8 +30,21 @@
         nextText: 'Onward →',
         prevText: '← Go back'*/
       });
-      //$('.GITheWall').GITheWall();
-      //$('.GITheWall2').GITheWall();
+      function go(){
+        /*$('.catitem_wrap').stop().show();
+        $('.catitem_wrap').css('opacity','1');
+        $('.catitem_wrap').animate({
+          opacity: 0,
+        }, 500, function() {
+          $('.catitem_wrap').hide();
+        });*/
+        $('.catitem').css('opacity','0');
+        $('.catitem').animate({
+          opacity: 1,
+        }, 500, function() {
+          //$('.catitem_wrap').hide();
+        });
+      };
       var wall = $('.GITheWall').GITheWall({
         animationSpeed: 300,
         arrows: true,
@@ -40,11 +53,12 @@
         closeButtonClass: 'wall_close',
         initialWrapperHeight: 360,
         dynamicHeight: false,
-        autoscroll: false,
+        autoscroll: true,
         margin: {
           top: 3,
           bottom: 0
-        }
+        },
+        onItemChange: go
       });
     });
     
@@ -91,7 +105,7 @@
     <nav class="menu">
       <ul class="menu_list">
         <li class="menu_item">
-          <a href="#" class="menu_link">главная</a>
+          <a href="/" class="menu_link">главная</a>
         </li>
         <li class="menu_item">
           <a href="#" class="menu_link">о компании</a>
@@ -109,7 +123,7 @@
           <a href="#" class="menu_link">дисконтная программа</a>
         </li>
         <li class="menu_item">
-          <a href="#" class="menu_link">контакты</a>
+          <a href="contacts.php" class="menu_link">контакты</a>
         </li>
       </ul>
     </nav>
@@ -221,6 +235,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -242,6 +257,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -263,6 +279,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -284,6 +301,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -305,6 +323,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -326,6 +345,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -347,6 +367,7 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
@@ -368,35 +389,188 @@
                   </div>
                   <a href="#" class="catitem_link">Оформить заказ</a>
                 </div>
+                <div class="catitem_wrap"></div>
               </div>
             </div>
           </div>
           <div class="catalogwidth_more"><a href="#">Смотреть все багеты с шириной 10-30 мм.>></a></div>
           <div class="catalogwidth_title">ШИРИНА 30-60 мм.</div>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/9.jpg">
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template9">
             <img src="image/catalog/9.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/10.jpg">
+          <div class="hide">
+            <div id="inline-template9">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/9.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 9</div>
+                  <div class="catitem_art">Артикул 1009</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template10">
             <img src="image/catalog/10.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/11.jpg">
+          <div class="hide">
+            <div id="inline-template10">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/10.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 10</div>
+                  <div class="catitem_art">Артикул 1010</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template11">
             <img src="image/catalog/11.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/12.jpg">
+          <div class="hide">
+            <div id="inline-template11">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/11.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 11</div>
+                  <div class="catitem_art">Артикул 1011</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template12">
             <img src="image/catalog/12.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/13.jpg">
+          <div class="hide">
+            <div id="inline-template12">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/12.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 12</div>
+                  <div class="catitem_art">Артикул 1012</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template13">
             <img src="image/catalog/13.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/14.jpg">
+          <div class="hide">
+            <div id="inline-template13">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/13.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 13</div>
+                  <div class="catitem_art">Артикул 1013</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template14">
             <img src="image/catalog/14.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/15.jpg">
+          <div class="hide">
+            <div id="inline-template14">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/14.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 14</div>
+                  <div class="catitem_art">Артикул 1014</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template15">
             <img src="image/catalog/15.jpg" alt="">
           </li>
-          <li class="catalogwidth_item" data-contenttype="image" data-href="image/catalog/16.jpg">
+          <div class="hide">
+            <div id="inline-template15">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/15.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 15</div>
+                  <div class="catitem_art">Артикул 1015</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
+          <li class="catalogwidth_item" data-contenttype="inline" data-href="#inline-template16">
             <img src="image/catalog/16.jpg" alt="">
           </li>
+          <div class="hide">
+            <div id="inline-template16">
+              <div class="catitem">
+                <div class="catitem_image">
+                  <img src="image/catalog/16.jpg" alt="">
+                </div>
+                <div class="catitem_text">
+                  <div class="catitem_title">Название рамы 16</div>
+                  <div class="catitem_art">Артикул 1016</div>
+                  <div class="catitem_descr">
+                    <p>Блокнот для записей, оформленный известным дизайнером-иллюстратором Яной Франк, содержит интересные факты о городе и окрестностях.</p>
+                    <p>Яркое оформление делает издание великолепным подарком.</p>
+                  </div>
+                  <a href="#" class="catitem_link">Оформить заказ</a>
+                </div>
+                <div class="catitem_wrap"></div>
+              </div>
+            </div>
+          </div>
           <div class="catalogwidth_more"><a href="#">Смотреть все багеты с шириной 30-60 мм.>></a></div>
         </ul>
       </section>
@@ -445,7 +619,7 @@
               <a href="" class="fmenu_link">Отзывы</a>
             </li>
             <li class="fmenu_item">
-              <a href="" class="fmenu_link">Контакты</a>
+              <a href="contacts.php" class="fmenu_link">Контакты</a>
             </li>
           </ul>
         </div>

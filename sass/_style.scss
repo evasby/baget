@@ -16,7 +16,7 @@ h1{
   text-transform: uppercase;
   font-size: 19px;
   color: #caa466;
-  padding: 30px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 .hide{
   display: none;
@@ -32,6 +32,9 @@ h1{
 @import "search";
 @import "catitem";
 @import "catalogwidth";
+@import "contacts";
+@import "cslider";
+@import "cslidermin";
 @import "icons";
 @import "quickmenu";
 @import "counter";
