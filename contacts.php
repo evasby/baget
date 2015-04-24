@@ -23,30 +23,149 @@
   <![endif]-->
   <script>
     $(document).ready(function(){
-
       var slider;
       var slidermin;
-
-      slidermin = $('.cslidermin_list').bxSlider({
+      var slidermin1;
+      var slidermin2;
+      var slidermin3;
+      var slidermin4;
+      /*slidermin = $('.cslidermin_list').bxSlider({
         pagerCustom: '.cslidermin_pager',
         controls: false,
         //mode: 'fade'
+      });*/
+			/*$('.cslidermin_list').each(function() {
+			  $(this).bxSlider({
+	        pagerCustom: '.cslidermin_pager',
+	        controls: false,
+	      });
+			});*/
+			/*slidermin = $('.cslidermin_list').bxSlider({
+        //pagerCustom: '.cslidermin_pager',
+        controls: false,
+      });  */
+    	/*$('.cslidermin_list_1').each(function() {
+			  $(this).bxSlider({
+	        pagerCustom: '.cslidermin_pager_1',
+	        controls: false,
+	      });
+			});
+			$('.cslidermin_list_2').each(function() {
+			  $(this).bxSlider({
+	        pagerCustom: '.cslidermin_pager_2',
+	        controls: false,
+	      });
+			});
+			$('.cslidermin_list_3').each(function() {
+			  $(this).bxSlider({
+	        pagerCustom: '.cslidermin_pager_3',
+	        controls: false,
+	      });
+			});
+			$('.cslidermin_list_4').each(function() {
+			  $(this).bxSlider({
+	        pagerCustom: '.cslidermin_pager_4',
+	        controls: false,
+	      });
+			});*/
+			slidermin1 = $('.cslidermin_list_1').bxSlider({
+        pagerCustom: '.cslidermin_pager_1',
+        controls: false,
       });
-
+      slidermin2 = $('.cslidermin_list_2').bxSlider({
+        pagerCustom: '.cslidermin_pager_2',
+        controls: false,
+      });
+      slidermin3 = $('.cslidermin_list_3').bxSlider({
+        pagerCustom: '.cslidermin_pager_3',
+        controls: false,
+      });
+      slidermin4 = $('.cslidermin_list_4').bxSlider({
+        pagerCustom: '.cslidermin_pager_4',
+        controls: false,
+      });
 
       slider = $('.bxslider').bxSlider({
         pagerCustom: '#bx-pager',
         controls: false,
         mode: 'fade',
-        onSlideAfter: function(){
-        	slidermin.reloadSlider();
-        }
-      });
-      
+        onSliderLoad: function(currentIndex){
+        	slidermin1 = $('.cslidermin_list_1').bxSlider({
+		        pagerCustom: '.cslidermin_pager_1',
+		        controls: false,
+		      });
+        },
+        onSlideAfter: function($slideElement, oldIndex, newIndex){
 
-      
+        	//$slideElement: jQuery element of the destination element
+				  //oldIndex: element index of the previous slide (before the transition)
+				  //newIndex: element index of the destination slide (after the transition)
+				  /*switch (oldIndex) {
+				  	case (0):
+	          	slidermin1.destroySlider();
+	          	break;
+	          case (1):
+	          	slidermin2.destroySlider();
+	          	break;
+	          case (2):
+	          	slidermin3.destroySlider();
+	          	break;
+	          case (3):
+	          	slidermin4.destroySlider();
+	          	break;
+	        }*/
+
+				  switch (newIndex) {
+	          case (0):
+	          	slidermin1.reloadSlider({
+		        		pagerCustom: '.cslidermin_pager_1',
+		        		controls: false,
+		        	});
+		        	/*slidermin2 = $('.cslidermin_list_2').bxSlider({
+				        pagerCustom: '.cslidermin_pager_2',
+				        controls: false,
+				      });*/
+	          	break;
+	          case (1):
+	          	slidermin2.reloadSlider({
+		        		pagerCustom: '.cslidermin_pager_2',
+		        		controls: false,
+		        	});
+		        	/*slidermin2 = $('.cslidermin_list_2').bxSlider({
+				        pagerCustom: '.cslidermin_pager_2',
+				        controls: false,
+				      });*/
+	          	break;
+	          case (2):
+	     				slidermin3.reloadSlider({
+		        		pagerCustom: '.cslidermin_pager_3',
+		        		controls: false,
+		        	});
+		        	/*slidermin3 = $('.cslidermin_list_3').bxSlider({
+				        pagerCustom: '.cslidermin_pager_3',
+				        controls: false,
+				      });*/
+	          	break;
+	          case (3):
+	     				slidermin4.reloadSlider({
+		        		pagerCustom: '.cslidermin_pager_4',
+		        		controls: false,
+		        	});
+		        	/*slidermin4 = $('.cslidermin_list_4').bxSlider({
+				        pagerCustom: '.cslidermin_pager_4',
+				        controls: false,
+				      });*/
+	          	break;
+	          default:
+     			}
+				  /*console.log($slideElement);
+				  console.log(oldIndex);
+				  console.log(newIndex);*/
+        },
+        onSlideBefore: function(){
+        },
+      });  
     });
-    
   </script>
 </head>
 <body>
@@ -130,7 +249,7 @@
                 <li>
                   <div class="cslidermin">
                     <div class="cslidermin_title">Время работы с 10.00 до 20.00</div>
-                    <ul class="cslidermin_list">
+                    <ul class="cslidermin_list cslidermin_list_1">
                       <li>
                         <img src="/image/slide.jpg" />
                       </li>
@@ -141,7 +260,7 @@
                         <img src="/image/slide.jpg" />
                       </li>
                     </ul>
-                    <div class="cslidermin_pager">
+                    <div class="cslidermin_pager cslidermin_pager_1">
                       <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
@@ -151,7 +270,7 @@
                 <li>
                   <div class="cslidermin">
                     <div class="cslidermin_title">Время работы с 11.00 до 20.00</div>
-                    <ul class="cslidermin_list">
+                    <ul class="cslidermin_list cslidermin_list_2">
                       <li>
                         <img src="/image/slide.jpg" />
                       </li>
@@ -162,7 +281,7 @@
                         <img src="/image/slide.jpg" />
                       </li>
                     </ul>
-                    <div class="cslidermin_pager">
+                    <div class="cslidermin_pager cslidermin_pager_3">
                       <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
@@ -172,7 +291,7 @@
                 <li>
                   <div class="cslidermin">
                     <div class="cslidermin_title">Время работы с 12.00 до 20.00</div>
-                    <ul class="cslidermin_list">
+                    <ul class="cslidermin_list cslidermin_list_3">
                       <li>
                         <img src="/image/slide.jpg" />
                       </li>
@@ -183,7 +302,7 @@
                         <img src="/image/slide.jpg" />
                       </li>
                     </ul>
-                    <div class="cslidermin_pager">
+                    <div class="cslidermin_pager cslidermin_pager_3">
                       <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
@@ -193,7 +312,7 @@
                 <li>
                   <div class="cslidermin">
                     <div class="cslidermin_title">Время работы с 13.00 до 20.00</div>
-                    <ul class="cslidermin_list">
+                    <ul class="cslidermin_list cslidermin_list_4">
                       <li>
                         <img src="/image/slide.jpg" />
                       </li>
@@ -204,7 +323,7 @@
                         <img src="/image/slide.jpg" />
                       </li>
                     </ul>
-                    <div class="cslidermin_pager">
+                    <div class="cslidermin_pager cslidermin_pager_4">
                       <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
