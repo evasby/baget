@@ -23,21 +23,27 @@
   <![endif]-->
   <script>
     $(document).ready(function(){
+
       var slider;
       var slidermin;
+
       slidermin = $('.cslidermin_list').bxSlider({
         pagerCustom: '.cslidermin_pager',
         controls: false,
         //mode: 'fade'
       });
+
+
       slider = $('.bxslider').bxSlider({
         pagerCustom: '#bx-pager',
         controls: false,
         mode: 'fade',
         onSlideAfter: function(){
+        	slidermin.reloadSlider();
         }
       });
       
+
       
     });
     
