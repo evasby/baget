@@ -8,6 +8,8 @@
   
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script type="text/javascript" src="js/map.js"></script>
   
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,6 +25,47 @@
   <![endif]-->
   <script>
     $(document).ready(function(){
+
+
+      $('.map1').click(function(e) {
+        addrr1.options.set('iconImageHref', '/image/map_icon_red.png');
+        addrr2.options.set('iconImageHref', '/image/map_icon.png');
+        /*addrr3.options.set('iconImageHref', '/image/map_icon.png');
+        addrr4.options.set('iconImageHref', '/image/map_icon.png');*/
+        /*myMap.geoObjects.add(addrr1_red);*/
+        myMap.panTo(addrr1.geometry.getCoordinates(), {
+          delay: 1500
+        });
+      })
+      $('.map2').click(function(e) {
+        addrr1.options.set('iconImageHref', '/image/map_icon.png');
+        addrr2.options.set('iconImageHref', '/image/map_icon_red.png');
+        /*addrr3.options.set('iconImageHref', '/image/map_icon.png');
+        addrr4.options.set('iconImageHref', '/image/map_icon.png');*/
+        myMap.panTo(addrr2.geometry.getCoordinates(), {
+          delay: 1500
+        });
+      })
+      $('.map3').click(function(e) {
+        addrr1.options.set('iconImageHref', '/image/map_icon_red.png');
+        addrr2.options.set('iconImageHref', '/image/map_icon.png');
+        /*addrr3.options.set('iconImageHref', '/image/map_icon.png');
+        addrr4.options.set('iconImageHref', '/image/map_icon.png');*/
+        /*myMap.geoObjects.add(addrr1_red);*/
+        myMap.panTo(addrr1.geometry.getCoordinates(), {
+          delay: 1500
+        });
+      })
+      $('.map4').click(function(e) {
+        addrr1.options.set('iconImageHref', '/image/map_icon.png');
+        addrr2.options.set('iconImageHref', '/image/map_icon_red.png');
+        /*addrr3.options.set('iconImageHref', '/image/map_icon.png');
+        addrr4.options.set('iconImageHref', '/image/map_icon.png');*/
+        myMap.panTo(addrr2.geometry.getCoordinates(), {
+          delay: 1500
+        });
+      })
+
       var slider;
       var slidermin;
       var slidermin1;
@@ -236,12 +279,15 @@
       <div class="contacts">
         <div class="contacts_row">
           <div class="contacts_item">
-            <ul id="bx-pager">
-              <li><a href="" data-slide-index="0">Институт культуры</a></li>
-              <li><a href="" data-slide-index="1">Пушкинская</a></li>
-              <li><a href="" data-slide-index="2">Институт культуры</a></li>
-              <li><a href="" data-slide-index="3">Пушкинская</a></li>
-            </ul>
+            <div class="mainpager">
+              <div class="mainpager_title">Магазины</div>
+              <ul id="bx-pager" class="mainpager_list">
+                <li class="mainpager_item map1"><a href="" data-slide-index="0" class="mainpager_link">Институт культуры,<br> ул.Могилевская 5 п.6</a></li>
+                <li class="mainpager_item map2"><a href="" data-slide-index="1" class="mainpager_link">Пушкинская,<br> ул. Дунина-Марцинкевича 11 ТЦ "Раковский Кирмаш" 2-й этаж пав.№17</a></li>
+                <li class="mainpager_item map3"><a href="" data-slide-index="2" class="mainpager_link">Институт культуры,<br> ул.Могилевская 5 п.6</a></li>
+                <li class="mainpager_item map4"><a href="" data-slide-index="3" class="mainpager_link">Пушкинская,<br> ул. Дунина-Марцинкевича 11 ТЦ "Раковский Кирмаш" 2-й этаж пав.№17</a></li>
+              </ul>
+            </div>
           </div>
           <div class="contacts_item">
             <div class="cslider">
@@ -281,7 +327,7 @@
                         <img src="/image/slide.jpg" />
                       </li>
                     </ul>
-                    <div class="cslidermin_pager cslidermin_pager_3">
+                    <div class="cslidermin_pager cslidermin_pager_2">
                       <a href="" data-slide-index="0"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="1"><img src="/image/slide.jpg" /></a>
                       <a href="" data-slide-index="2"><img src="/image/slide.jpg" /></a>
@@ -333,9 +379,57 @@
               </ul>
             </div>
           </div>
-          <div class="contacts_item">map</div>
+          <div class="contacts_item">
+            <div class="map" id="map">
+              <!--<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KIBLIh2dMyCfac0hP0F_3Kaueng-b-Xj&width=427&height=338"></script>-->
+            </div>
+          </div>
         </div>
-        <div class="contacts_row"></div>
+        <div class="contacts_row">
+          <div class="contacts_item">
+            <div class="feedback1">
+              <div class="feedback1_title">Напишите нам</div>
+              <form action="#">
+                <div class="feedback1_inner">
+                  <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="feedback1_inner">
+                  <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="feedback1_inner">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                </div>
+                  <button type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="contacts_item">
+            <div class="banner">
+              <img src="/image/banner.jpg" alt="">
+            </div>
+          </div>
+          <div class="contacts_item">
+            <div class="feedback2">
+              <div class="feedback2_title">Позвонить проще?</div>
+              <div class="feedback2_person">
+                <div class="feedback2_image">
+                  <img src="/image/dasha.jpg" alt="">
+                </div>
+                <div class="feedback2_text">
+                  <div class="feedback2_phone">+375 (29) 175 10 48</div>
+                  <div class="feedback2_name">Вас приветствует наша Даша! Она ответит на Ваши вопросы.</div>
+                </div>
+              </div>
+              <div class="feedback2_title feedback2_title__2">Мы перезвоним вам!</div>
+              <form action="#">
+                <div class="feedback2_inner">
+                  <input type="text" placeholder="Введите номер телефона">
+                </div>
+                <button type="submit">Заказать звонок</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">

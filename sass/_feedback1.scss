@@ -1,0 +1,62 @@
+.feedback1{
+  width: 306px;
+  margin: 30px 44px 0px 0px;
+  &_title{
+    text-transform: uppercase;
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+  }
+  &_inner{
+    padding: 0px 0px 3px 0px;
+    input{
+      height: 30px;
+      width: 100%;
+      border: 1px solid #d9d8d7;
+      @include def-border-radius(3px);
+      text-align: center;
+      @include def-transition(background-color, 0.2s);
+      &:hover{
+        background-color: #ededed;
+      }
+      &:focus{
+        background-color: #ededed;
+      }
+    }
+    textarea{
+      margin: 0px;
+      height: 125px;
+      width: 100%;
+      border: 1px solid #d9d8d7;
+      @include def-border-radius(3px);
+      resize: none;
+      text-align: center;
+      font-family:  'MS Shell Dlg';
+      font-size: 13px;
+      padding-top: 5px;
+      @include def-transition(background-color, 0.2s);
+      &:hover{
+        background-color: #ededed;
+      }
+      &:focus{
+        background-color: #ededed;
+      }
+    }
+  }
+  button{
+    display: block;
+    width: 247px;
+    height: 30px;
+    border: 1px solid #d9d8d7;
+    @include def-border-radius(3px);
+    margin: 0 auto;
+    background-color: #ffffff;
+    @include def-transition(background-color, 0.2s);
+    &:hover{
+      background-color: #ededed;
+      cursor: pointer;
+    }
+    &:focus{
+      background-color: #ededed;
+    }
+  }
+}

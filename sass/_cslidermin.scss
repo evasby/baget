@@ -4,6 +4,7 @@
     img{
       display: block;
       border: 1px solid #fdfcfb;
+      @include def-border-radius(3px);
       float: left;
       margin: 4px 0px 0px 8px;
       width: 85px;
@@ -11,10 +12,28 @@
       @include def-transition(border-color, 0.2s);
     }
     & a:first-child img{
-      margin: 4px 0px 0px 0px;
+      margin: 5px 0px 0px 0px;
     }
     & .active img{
       border: 1px solid #6b1740;
+    }
+  }
+  &_title{
+    text-transform: uppercase;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+  }
+  &_list{
+    img{
+      display: block;
+      border: 1px solid #fdfcfb;
+      @include def-border-radius(3px);
+    }
+  }
+  .bx-viewport{
+    height: 252px!important;
+    li{
+      width: 277px !important;
     }
   }
 }

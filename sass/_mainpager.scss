@@ -1,0 +1,41 @@
+.mainpager{
+  width: 230px;
+
+  &_title{
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+  }
+  &_list{
+    //height: 340px;
+  }
+  &_item{
+    //height: 25%;
+    padding: 3px 0px 0px 0px;
+    &:first-child{
+      padding: 0px;
+    }
+  }
+  &_link{
+    font-family: arial;
+    font-size: 11px;
+    line-height: 1.4;
+    text-decoration: none;
+    @include link(#333333, #333333);
+    display: block;
+    padding: 10px 18px 0px 43px;
+    height: 71px;
+    margin: 0px 18px 0px 0px;
+    border: 1px solid #eaeaea;
+    background: url('../image/sub2.png') no-repeat 10px 8px;
+    @include def-border-radius(3px);
+    @include def-transition(background-color, 0.2s);
+    &.active{
+      background-color: #ededed;
+    }
+    &:hover{
+      background-color: #ededed;
+    }
+  }
+}

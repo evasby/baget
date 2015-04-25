@@ -1007,6 +1007,61 @@ h1 {
   float: left;
 }
 
+.mainpager {
+  width: 230px;
+}
+.mainpager_title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
+}
+.mainpager_item {
+  padding: 3px 0px 0px 0px;
+}
+.mainpager_item:first-child {
+  padding: 0px;
+}
+.mainpager_link {
+  font-family: arial;
+  font-size: 11px;
+  line-height: 1.4;
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  padding: 10px 18px 0px 43px;
+  height: 71px;
+  margin: 0px 18px 0px 0px;
+  border: 1px solid #eaeaea;
+  background: url("../image/sub2.png") no-repeat 10px 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.mainpager_link:visited {
+  color: #333333;
+}
+.mainpager_link:hover {
+  color: #333333;
+}
+.mainpager_link:active {
+  color: #333333;
+}
+.mainpager_link:focus {
+  color: #333333;
+}
+.mainpager_link.active {
+  background-color: #ededed;
+}
+.mainpager_link:hover {
+  background-color: #ededed;
+}
+
 .cslider {
   width: 277px;
 }
@@ -1017,6 +1072,9 @@ h1 {
 .cslidermin_pager img {
   display: block;
   border: 1px solid #fdfcfb;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   float: left;
   margin: 4px 0px 0px 8px;
   width: 85px;
@@ -1028,10 +1086,200 @@ h1 {
   transition: border-color 0.2s ease-in-out;
 }
 .cslidermin_pager a:first-child img {
-  margin: 4px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
 }
 .cslidermin_pager .active img {
   border: 1px solid #6b1740;
+}
+.cslidermin_title {
+  text-transform: uppercase;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
+}
+.cslidermin_list img {
+  display: block;
+  border: 1px solid #fdfcfb;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.cslidermin .bx-viewport {
+  height: 252px !important;
+}
+.cslidermin .bx-viewport li {
+  width: 277px !important;
+}
+
+.map {
+  margin: 46px 0px 0px 18px;
+  height: 338px;
+  width: 427px;
+}
+
+.feedback1 {
+  width: 306px;
+  margin: 30px 44px 0px 0px;
+}
+.feedback1_title {
+  text-transform: uppercase;
+  padding: 10px 0px 15px 0px;
+  text-align: center;
+}
+.feedback1_inner {
+  padding: 0px 0px 3px 0px;
+}
+.feedback1_inner input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #d9d8d7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.feedback1_inner input:hover {
+  background-color: #ededed;
+}
+.feedback1_inner input:focus {
+  background-color: #ededed;
+}
+.feedback1_inner textarea {
+  margin: 0px;
+  height: 125px;
+  width: 100%;
+  border: 1px solid #d9d8d7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  resize: none;
+  text-align: center;
+  font-family: 'MS Shell Dlg';
+  font-size: 13px;
+  padding-top: 5px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.feedback1_inner textarea:hover {
+  background-color: #ededed;
+}
+.feedback1_inner textarea:focus {
+  background-color: #ededed;
+}
+.feedback1 button {
+  display: block;
+  width: 247px;
+  height: 30px;
+  border: 1px solid #d9d8d7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.feedback1 button:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+.feedback1 button:focus {
+  background-color: #ededed;
+}
+
+.banner {
+  margin: 30px 41px 0px 0px;
+}
+
+.feedback2 {
+  width: 306px;
+  margin: 30px 0px 0px 0px;
+}
+.feedback2_title {
+  text-transform: uppercase;
+  padding: 10px 0px 35px 0px;
+  text-align: center;
+}
+.feedback2_title__2 {
+  padding: 26px 0px 15px 0px;
+}
+.feedback2_person {
+  overflow: hidden;
+}
+.feedback2_image {
+  float: left;
+  width: 108px;
+  height: 95px;
+}
+.feedback2_text {
+  float: left;
+  width: 195px;
+}
+.feedback2_phone {
+  font-size: 17px;
+  padding: 15px 0px 10px 20px;
+}
+.feedback2_name {
+  font-family: arial;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 6px;
+}
+.feedback2_inner {
+  padding: 0px 0px 3px 0px;
+}
+.feedback2_inner input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #d9d8d7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.feedback2_inner input:hover {
+  background-color: #ededed;
+}
+.feedback2_inner input:focus {
+  background-color: #ededed;
+}
+.feedback2 button {
+  display: block;
+  width: 247px;
+  height: 30px;
+  border: 1px solid #d9d8d7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.feedback2 button:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+.feedback2 button:focus {
+  background-color: #ededed;
 }
 
 .icons {
