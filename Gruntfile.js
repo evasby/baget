@@ -22,16 +22,33 @@ module.exports = function(grunt) {
             }
         },*/
         
-        /*imagemin: {
+        imagemin: {
+            /*static: {                          // Target
+              options: {                       // Target options
+                optimizationLevel: 3,
+                svgoPlugins: [{ removeViewBox: false }],
+                use: [mozjpeg()]
+              },
+              files: {                         // Dictionary of files
+                'dist/img.png': 'src/img.png', // 'destination': 'source'
+                'dist/img.jpg': 'src/img.jpg',
+                'dist/img.gif': 'src/img.gif'
+              }
+            },*/
             dynamic: {
+                options: {                       // Target options
+                    optimizationLevel: 3,
+                    svgoPlugins: [{ removeViewBox: false }],
+                    //use: [mozjpeg()]
+                  },
                 files: [{
                     expand: true,
-                    cwd: 'images/',
+                    cwd: 'image/new/baget',
                     src: ['**//**.{png,jpg,gif}'],
-                    dest: 'images/build/'
+                    dest: 'image/new/baget-ready/'
                 }]
             }
-        },*/
+        },
         
         sass: {
             dist: {
@@ -104,6 +121,6 @@ module.exports = function(grunt) {
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     //grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'watch']);
-    grunt.registerTask('default', ['sass', 'ftp_upload', 'watch']);
+    grunt.registerTask('default', ['imagemin', 'sass', 'ftp_upload', 'watch']);
 
 };
