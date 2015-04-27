@@ -1,6 +1,10 @@
 .feedback2{
+  .messages{
+    display: none;
+  }
   width: 306px;
   margin: 30px 0px 0px 0px;
+  position: relative;
   &_title{
     text-transform: uppercase;
     padding: 10px 0px 35px 0px;
@@ -46,9 +50,12 @@
       &:focus{
         background-color: #ededed;
       }
+      &.error{
+        background-color: #fabbcf;
+      }
     }
   }
-  button{
+  button, .webform-submit{
     display: block;
     width: 247px;
     height: 30px;
@@ -63,6 +70,12 @@
     }
     &:focus{
       background-color: #ededed;
+    }
+  }
+  &_confirmation{
+    p{
+      text-align: center;
+      padding: 0px 15px;
     }
   }
 }

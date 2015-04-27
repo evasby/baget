@@ -76,8 +76,8 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: ['sass/*.scss'],
-                //tasks: ['sass', 'ftp_upload'],
-                tasks: ['sass'],
+                tasks: ['sass', 'ftp_upload'],
+                //tasks: ['sass'],
                 options: {
                     spawn: false,
                 }
@@ -104,6 +104,6 @@ module.exports = function(grunt) {
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     //grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'watch']);
-    grunt.registerTask('default', ['sass', 'watch']);
+    grunt.registerTask('default', ['sass', 'ftp_upload', 'watch']);
 
 };

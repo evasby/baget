@@ -1,4 +1,8 @@
 .feedback1{
+  .messages{
+    display: none;
+  }
+  position: relative;
   width: 306px;
   margin: 30px 44px 0px 0px;
   &_title{
@@ -9,7 +13,10 @@
   &_inner{
     padding: 0px 0px 3px 0px;
     input{
-      height: 30px;
+      //display: block;
+      box-sizing: border-box;
+      //width: 309px;
+      height: 34px;
       width: 100%;
       border: 1px solid #d9d8d7;
       @include def-border-radius(3px);
@@ -21,11 +28,17 @@
       &:focus{
         background-color: #ededed;
       }
+      &.error{
+        background-color: #fabbcf;
+      }
     }
     textarea{
+      box-sizing: border-box;
+      //display: block;
       margin: 0px;
-      height: 125px;
+      height: 131px;
       width: 100%;
+      //width: 309px;
       border: 1px solid #d9d8d7;
       @include def-border-radius(3px);
       resize: none;
@@ -40,9 +53,12 @@
       &:focus{
         background-color: #ededed;
       }
+      &.error{
+        background-color: #fabbcf;
+      }
     }
   }
-  button{
+  button, .webform-submit{
     display: block;
     width: 247px;
     height: 30px;
@@ -57,6 +73,12 @@
     }
     &:focus{
       background-color: #ededed;
+    }
+  }
+  &_confirmation{
+    p{
+      text-align: center;
+      padding: 0px 15px;
     }
   }
 }

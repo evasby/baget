@@ -185,7 +185,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 32px;
   height: 315px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 2;
   opacity: 0.7;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -1087,8 +1087,12 @@ h1 {
 }
 
 .feedback1 {
+  position: relative;
   width: 306px;
   margin: 30px 44px 0px 0px;
+}
+.feedback1 .messages {
+  display: none;
 }
 .feedback1_title {
   text-transform: uppercase;
@@ -1099,7 +1103,8 @@ h1 {
   padding: 0px 0px 3px 0px;
 }
 .feedback1_inner input {
-  height: 30px;
+  box-sizing: border-box;
+  height: 34px;
   width: 100%;
   border: 1px solid #d9d8d7;
   -moz-border-radius: 3px;
@@ -1118,9 +1123,13 @@ h1 {
 .feedback1_inner input:focus {
   background-color: #ededed;
 }
+.feedback1_inner input.error {
+  background-color: #fabbcf;
+}
 .feedback1_inner textarea {
+  box-sizing: border-box;
   margin: 0px;
-  height: 125px;
+  height: 131px;
   width: 100%;
   border: 1px solid #d9d8d7;
   -moz-border-radius: 3px;
@@ -1143,7 +1152,10 @@ h1 {
 .feedback1_inner textarea:focus {
   background-color: #ededed;
 }
-.feedback1 button {
+.feedback1_inner textarea.error {
+  background-color: #fabbcf;
+}
+.feedback1 button, .feedback1 .webform-submit {
   display: block;
   width: 247px;
   height: 30px;
@@ -1159,21 +1171,30 @@ h1 {
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
-.feedback1 button:hover {
+.feedback1 button:hover, .feedback1 .webform-submit:hover {
   background-color: #ededed;
   cursor: pointer;
 }
-.feedback1 button:focus {
+.feedback1 button:focus, .feedback1 .webform-submit:focus {
   background-color: #ededed;
+}
+.feedback1_confirmation p {
+  text-align: center;
+  padding: 0px 15px;
 }
 
 .banner {
+  width: 253px;
   margin: 30px 41px 0px 0px;
 }
 
 .feedback2 {
   width: 306px;
   margin: 30px 0px 0px 0px;
+  position: relative;
+}
+.feedback2 .messages {
+  display: none;
 }
 .feedback2_title {
   text-transform: uppercase;
@@ -1228,7 +1249,10 @@ h1 {
 .feedback2_inner input:focus {
   background-color: #ededed;
 }
-.feedback2 button {
+.feedback2_inner input.error {
+  background-color: #fabbcf;
+}
+.feedback2 button, .feedback2 .webform-submit {
   display: block;
   width: 247px;
   height: 30px;
@@ -1244,12 +1268,27 @@ h1 {
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
-.feedback2 button:hover {
+.feedback2 button:hover, .feedback2 .webform-submit:hover {
   background-color: #ededed;
   cursor: pointer;
 }
-.feedback2 button:focus {
+.feedback2 button:focus, .feedback2 .webform-submit:focus {
   background-color: #ededed;
+}
+.feedback2_confirmation p {
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.ajax-progress {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+.ajax-progress .throbber {
+  background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px;
+  height: 16px;
+  width: 11px;
 }
 
 .icons {
