@@ -121,6 +121,7 @@ module.exports = function(grunt) {
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     //grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'watch']);
-    grunt.registerTask('default', ['imagemin', 'sass', 'ftp_upload', 'watch']);
+    //grunt.registerTask('default', ['imagemin', 'sass', 'ftp_upload', 'watch']);
+    grunt.registerTask('default', ['sass', 'ftp_upload', 'watch']);
 
 };
