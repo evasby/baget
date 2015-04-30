@@ -1,0 +1,73 @@
+.breadcrumb{
+ margin: -15px 0px 15px 0px;
+ &_link{
+   @include link(#caa466, #caa466);
+   position: relative;
+   margin: 0px 5px 0px 0px;
+   &:before{
+      background: url("../image/bread.png")no-repeat #fff;
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 8px;
+      margin: 0px 5px 0px 0px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="breadcrumb_before"
+      );
+      *+html &{
+        margin-right: 15px;
+      }
+      .breadcrumb_before{
+        background: url("../image/bread.png")no-repeat #fff;
+        width: 16px;
+        height: 8px;
+        position: absolute;
+        top: 4px;
+        left: -12px;
+      }
+    }
+    &:first-child {
+      margin: 0px 5px 0px 0px;
+    }
+    &:first-child:before {
+      display: none; 
+    }
+    @include old-ie{
+      &:first-child .breadcrumb_before {
+        display: none;
+      }
+    }
+ }
+ &_item{
+   color: #caa466;
+   position: relative;
+   &:before{
+      background: url("../image/bread.png")no-repeat #fff;
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 8px;
+      margin: 0px 5px 0px 0px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="breadcrumb_before"
+      );
+      *+html &{
+        margin-right: 15px;
+      }
+      .breadcrumb_before{
+        background: url("../image/bread.png")no-repeat #fff;
+       width: 16px;
+        height: 8px;
+        position: absolute;
+        top: 4px;
+        left: -12px;
+      }
+    }
+ }
+}

@@ -1,3 +1,15 @@
 .content{
   padding: 23px;
+  P{
+    font-family: arial;
+    line-height: 2;
+    margin-bottom: 15px;
+  }
+  ul{
+    margin: 0px 0px 15px 15px;
+    list-style-type: circle;
+    li{
+      line-height: 1.2;
+    }
+  }
 }

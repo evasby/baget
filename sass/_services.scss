@@ -1,0 +1,32 @@
+.services{
+  &_item{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &_image{
+    float: left;
+    img{
+      display: block;
+    }
+  }
+  &_text{
+    max-width: 730px;
+    padding-left: 30px;
+    float: left;
+    p{
+      line-height: 1;
+      margin: 0px;
+    }
+  }
+  &_title{
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+  }
+  &_link{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    @include link(#7e7a6c, #7e7a6c);
+  }
+}
