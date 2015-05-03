@@ -53,7 +53,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    noCache: true
                 },
                 files: {
                     'css/all.css': 'sass/all.scss',

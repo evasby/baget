@@ -1,0 +1,40 @@
+.advsearch{
+  padding: 0px 0px 0px 30px;
+  overflow: hidden;
+  position: relative;
+  &_list{
+    width: 100%;
+  }
+  &_item{
+    width: 212px;
+    height: 171px;
+    float: left;
+    cursor: pointer;
+    margin: 13px 13px 0px 0px;
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+  &_title{
+    font-family: myriadsemibold;
+    font-size: 15px;
+    color: #434342;
+    clear: both;
+    float: none;
+    overflow: hidden;
+    padding: 0px 0px 5px 0px;
+  }
+  &_more{
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+    padding: 13px 38px 0px 0px;
+    a{
+      font-family: arial;
+      font-size: 12px;
+      @include link(#333333, #333333);
+      text-decoration: none;
+    }
+  }
+}

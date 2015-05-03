@@ -353,7 +353,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .GI_TW_expander .GI_TW_pointer {
   position: absolute;
   margin-left: -20px;
-  margin-top: -20px;
+  margin-top: -19px;
   width: 0;
   height: 0;
   border-left: 19px solid transparent;
@@ -540,6 +540,72 @@ h1 {
 
 .hide {
   display: none;
+}
+
+.field-name-body ul {
+  margin: 0px 0px 15px 15px;
+  list-style-type: circle;
+}
+.field-name-body ul li {
+  line-height: 1.2;
+}
+
+.view-filters {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0px 0px 10px;
+  height: 240px;
+}
+.view-filters label {
+  font-family: arial;
+  font-weight: normal;
+  color: #444343;
+  font-size: 13px;
+}
+
+#edit-field-art-value-wrapper {
+  width: 280px;
+  float: none;
+}
+
+#edit-field-width-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-width-value-wrapper .views-widget {
+  display: none;
+}
+
+#edit-field-height-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-height-value-wrapper .views-widget {
+  display: none;
+}
+
+#edit-field-quarter-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-quarter-value-wrapper .views-widget {
+  display: none;
+}
+
+#edit-field-material-tid-wrapper {
+  width: 280px;
+  float: none;
+  position: absolute;
+  top: 65px;
+  left: 385px;
+}
+
+#edit-field-color-tid-wrapper {
+  width: 280px;
+  float: none;
+  position: absolute;
+  top: 0px;
+  left: 650px;
 }
 
 .inner {
@@ -839,13 +905,6 @@ h1 {
   font-family: arial;
   line-height: 2;
   margin-bottom: 15px;
-}
-.content ul {
-  margin: 0px 0px 15px 15px;
-  list-style-type: circle;
-}
-.content ul li {
-  line-height: 1.2;
 }
 
 .typelist {
@@ -1223,6 +1282,59 @@ h1 {
   color: #333333;
 }
 
+.advsearch {
+  padding: 0px 0px 0px 30px;
+  overflow: hidden;
+  position: relative;
+}
+.advsearch_list {
+  width: 100%;
+}
+.advsearch_item {
+  width: 212px;
+  height: 171px;
+  float: left;
+  cursor: pointer;
+  margin: 13px 13px 0px 0px;
+}
+.advsearch_item img {
+  height: 100%;
+  width: auto;
+}
+.advsearch_title {
+  font-family: myriadsemibold;
+  font-size: 15px;
+  color: #434342;
+  clear: both;
+  float: none;
+  overflow: hidden;
+  padding: 0px 0px 5px 0px;
+}
+.advsearch_more {
+  clear: both;
+  overflow: hidden;
+  text-align: right;
+  padding: 13px 38px 0px 0px;
+}
+.advsearch_more a {
+  font-family: arial;
+  font-size: 12px;
+  color: #333333;
+  text-decoration: none;
+}
+.advsearch_more a:visited {
+  color: #333333;
+}
+.advsearch_more a:hover {
+  color: #333333;
+}
+.advsearch_more a:active {
+  color: #333333;
+}
+.advsearch_more a:focus {
+  color: #333333;
+}
+
 .contacts_row {
   overflow: hidden;
 }
@@ -1236,7 +1348,7 @@ h1 {
 .mainpager_title {
   text-transform: uppercase;
   text-decoration: underline;
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0px 21px 0px;
   text-align: center;
 }
 .mainpager_item {
@@ -1538,15 +1650,18 @@ h1 {
   bottom: 3px;
   left: 3px;
 }
+.order .ajax-progress {
+  bottom: 6px;
+  left: -20px;
+}
+.view-filters .ajax-progress {
+  bottom: 0px;
+  left: 0px;
+}
 .ajax-progress .throbber {
   background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px;
   height: 16px;
   width: 11px;
-}
-
-.order .ajax-progress {
-  bottom: 6px;
-  left: 3px;
 }
 
 .icons {
