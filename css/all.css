@@ -550,64 +550,6 @@ h1 {
   line-height: 1.2;
 }
 
-.view-filters {
-  position: relative;
-  overflow: hidden;
-  padding: 0px 0px 0px 10px;
-  height: 240px;
-}
-.view-filters label {
-  font-family: arial;
-  font-weight: normal;
-  color: #444343;
-  font-size: 13px;
-}
-
-#edit-field-art-value-wrapper {
-  width: 280px;
-  float: none;
-}
-
-#edit-field-width-value-wrapper {
-  width: 280px;
-  float: none;
-}
-#edit-field-width-value-wrapper .views-widget {
-  display: none;
-}
-
-#edit-field-height-value-wrapper {
-  width: 280px;
-  float: none;
-}
-#edit-field-height-value-wrapper .views-widget {
-  display: none;
-}
-
-#edit-field-quarter-value-wrapper {
-  width: 280px;
-  float: none;
-}
-#edit-field-quarter-value-wrapper .views-widget {
-  display: none;
-}
-
-#edit-field-material-tid-wrapper {
-  width: 280px;
-  float: none;
-  position: absolute;
-  top: 65px;
-  left: 385px;
-}
-
-#edit-field-color-tid-wrapper {
-  width: 280px;
-  float: none;
-  position: absolute;
-  top: 0px;
-  left: 650px;
-}
-
 .inner {
   width: 1000px;
   margin: 0 auto;
@@ -1276,6 +1218,220 @@ h1 {
 }
 .advsearch_more a:focus {
   color: #333333;
+}
+
+.ui-slider-horizontal {
+  height: 10px;
+}
+
+.ui-slider-range {
+  background-color: #d8ac64;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: -1px 0px 0px -2px;
+  top: 0px;
+  background-color: #f3f2ed;
+}
+.ui-slider .ui-slider-handle:hover {
+  cursor: pointer;
+}
+
+.ui-widget-header {
+  background: none;
+  background-color: #d8ac64;
+}
+
+.ui-corner-all {
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.ui-widget-content {
+  background: none;
+  border: none;
+}
+
+.ui-widget-content .ui-state-hover {
+  border: 1px solid #d3d3d3;
+}
+
+/*.slider-filter-processed{
+  border: 1px solid #a6c9e2;
+  background: #daa;
+  border-radius: 35px;
+  padding-right: 35px; 
+}*/
+.bef-slider.ui-slider-horizontal {
+  margin: 0px;
+}
+
+.bef-slider_wrap {
+  background-color: #f3f2ed;
+  border: 1px solid #c8c8c8;
+  padding: 0px 6px 0px 0px;
+  margin-top: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.view-filters {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0px 0px 10px;
+  height: 321px;
+}
+.view-filters label {
+  font-family: arial;
+  font-weight: normal;
+  color: #444343;
+  font-size: 13px;
+}
+
+#edit-field-art-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-art-value-wrapper input {
+  border: 1px solid #b8b8b8;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 23px;
+  width: 278px;
+  margin: 5px 0px 20px 0px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+#edit-field-art-value-wrapper input:hover {
+  background-color: #ededed;
+}
+#edit-field-art-value-wrapper input:focus {
+  background-color: #ededed;
+}
+
+#edit-field-width-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-width-value-wrapper .views-widget {
+  display: none;
+}
+
+#edit-field-height-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-height-value-wrapper .views-widget {
+  display: none;
+}
+
+#edit-field-quarter-value-wrapper {
+  width: 280px;
+  float: none;
+}
+#edit-field-quarter-value-wrapper .views-widget {
+  display: none;
+}
+
+#edit-field-material-tid-wrapper {
+  width: 280px;
+  float: none;
+  position: absolute;
+  top: 0px;
+  left: 385px;
+}
+#edit-field-material-tid-wrapper > label {
+  margin: 0px 0px 5px 22px;
+}
+
+#edit-field-color-tid-wrapper {
+  width: 280px;
+  float: none;
+  position: absolute;
+  top: 0px;
+  left: 650px;
+}
+#edit-field-color-tid-wrapper > label {
+  margin: 0px 0px 5px 22px;
+}
+
+/*input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"] + label {
+    background: url('../image/checkbox.png') 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+input[type="checkbox"]:checked + label {
+    background-position: -20px 0px;
+}*/
+input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  background: url("../image/checkbox.png") no-repeat;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  padding: 7px 0px 7px 23px;
+  margin: 0px 0px 0px 0px;
+}
+input[type="checkbox"] + label:hover {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:hover:before {
+  -webkit-box-shadow: inset 0px 0px 5px 1px #d8ac64;
+  -moz-box-shadow: inset 0px 0px 5px 1px #d8ac64;
+  box-shadow: inset 0px 0px 5px 1px #d8ac64;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-position: -20px 0px;
 }
 
 .contacts_row {
@@ -2011,7 +2167,7 @@ h1 {
 
 .wf {
   display: block;
-  width: 170px;
+  width: 138px;
   height: 37px;
   margin: 0px auto;
   background: url("../image/wf.png") no-repeat;

@@ -30,57 +30,7 @@ h1{
     }
   }
 }
-.view-filters{
-  position: relative;
-  overflow: hidden;
-  padding: 0px 0px 0px 10px;
-  height: 240px;
-  label{
-    font-family: arial;
-    font-weight: normal;
-    color: #444343;
-    font-size: 13px;
-  }
-}
-#edit-field-art-value-wrapper{
-  width: 280px;
-  float: none;
-}
-#edit-field-width-value-wrapper{
-  width: 280px;
-  float: none;
-  .views-widget{
-    display: none;
-  }
-}
-#edit-field-height-value-wrapper{
-  width: 280px;
-  float: none;
-  .views-widget{
-    display: none;
-  }
-}
-#edit-field-quarter-value-wrapper{
-  width: 280px;
-  float: none;
-  .views-widget{
-    display: none;
-  }
-}
-#edit-field-material-tid-wrapper{
-  width: 280px;
-  float: none;
-  position: absolute;
-  top: 65px;
-  left: 385px;
-}
-#edit-field-color-tid-wrapper{
-  width: 280px;
-  float: none;
-  position: absolute;
-  top: 0px;
-  left: 650px;
-}
+
 //**********************************************************/
 //**********************************************************/
 @import "inner";
@@ -96,6 +46,7 @@ h1{
 @import "order";
 @import "catalogwidth";
 @import "advsearch";
+@import "exposed";
 @import "contacts";
 @import "mainpager";
 @import "cslider";
