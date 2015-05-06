@@ -1,6 +1,6 @@
 .search{
   background-color: #f3f2ed;
-  margin: 0px -23px 20px -23px;
+  margin: 0px -23px 4px -23px;
   padding: 3px 103px 3px 23px;
   overflow: hidden;
   &_wrap{
@@ -18,12 +18,12 @@
     font-size: 16px;
     margin-top: 3px;
   }
-  input{
+  &_input{
     border: none;
     width: 265px;
     height: 22px;
   }
-  button{
+  &_submit{
     border: none;
     padding: 0px;
     width: 30px;

@@ -1,0 +1,9 @@
+.pager{
+  margin: 10px 0px 0px 0px!important;
+  a{
+    @include link(#caa466, #caa466);
+  }
+  li{
+    color: #caa466;
+  }
+}

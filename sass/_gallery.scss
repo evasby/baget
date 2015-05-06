@@ -1,26 +1,33 @@
-.advsearch{
+.gallery{
   padding: 0px 0px 0px 30px;
   overflow: hidden;
   position: relative;
   &_list{
     width: 100%;
-    overflow: hidden;
   }
   &_item{
+    position: relative;
+
     width: 212px;
     height: 171px;
     float: left;
     cursor: pointer;
     margin: 13px 13px 0px 0px;
     img{
+      position: absolute;
       height: 100%;
       width: auto;
+      @include def-transition(transform, 0.2s);
+      &:hover{
+        @include scale(1.05);
+      }
     }
   }
   &_title{
     font-family: myriadsemibold;
     font-size: 15px;
     color: #434342;
+    text-transform: uppercase;
     clear: both;
     float: none;
     overflow: hidden;
@@ -37,8 +44,5 @@
       @include link(#333333, #333333);
       text-decoration: none;
     }
-  }
-  .search-form{
-    display: none;
   }
 }
