@@ -966,6 +966,53 @@ h1 {
   color: #7e7a6c;
 }
 
+.catready {
+  overflow: hidden;
+  padding: 0px 0px 0px 37px;
+}
+.catready_link {
+  position: relative;
+  float: left;
+  margin: 0px 13px 13px 0px;
+  overflow: hidden;
+}
+.catready_wrap {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 12px 0px 0px 0px;
+  background-color: #fdfcfb;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.catready_link:hover .catready_wrap {
+  background-color: #FAEDD3;
+}
+.catready_name {
+  padding: 0px 15px;
+  height: 42px;
+  text-align: center;
+  color: #434342;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+.catready_link:hover .catready_name {
+  height: 52px;
+}
+
 .catitem {
   font-family: arial;
   position: relative;
@@ -1969,8 +2016,8 @@ input[type="checkbox"]:checked + label:before {
 .icons_image {
   display: block;
   margin: 0 auto 10px auto;
-  width: 61px;
-  height: 50px;
+  width: 59px;
+  height: 55px;
 }
 
 .quickmenu {
