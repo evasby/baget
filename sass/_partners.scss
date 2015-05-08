@@ -1,0 +1,26 @@
+.partners{
+  margin: 44px 0px 0px 25px;
+  position: relative;
+  &_list{
+    
+  }
+  &_title{
+    color: #7e7a6c;
+    font-family: arial;
+    font-size: 16px;
+    padding: 0 0 0px 0px;
+    margin: 0px 0px 17px -23px;
+  }
+  &_item{
+    img{
+      display: block;
+      border: 1px solid #e3e3e3;
+      @include def-border-radius(3px);
+    }
+  }
+  .bx-controls{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}

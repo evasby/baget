@@ -32,4 +32,12 @@
 			height: 52px;
 		}
 	}
+	&_left{
+		float: left;
+		width: 192px;
+	}
+	&_right{
+		margin: 0px 0px 0px 227px;
+		overflow: hidden;
+	}
 }

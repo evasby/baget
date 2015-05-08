@@ -74,9 +74,12 @@
   &_link{
     font-family: 'myriad';
     font-size: 14px;
-    @include def-link-colors(#333333, #333333, #333333, #333333, #333333);
+    @include link(#333333, #ac8227);
     text-decoration: none;
     display: block;
     text-align: center;
+    &__active{
+      @include link(#ac8227, #ac8227);
+    }
   }
 }
