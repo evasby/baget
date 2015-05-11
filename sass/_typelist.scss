@@ -10,7 +10,7 @@
     text-transform: uppercase;
     text-decoration: none;
     @include def-border-radiuses(0px, 5px, 5px, 0px);
-    @include def-link-colors(#5a5a59, #caa466, #5a5a59, #5a5a59, #5a5a59);
+    @include link(#5a5a59, #caa466);
     display: block;
     padding: 15px 0px 15px 0px;
     width: 32.4%;
@@ -25,6 +25,9 @@
     }
     .typelist__double &{
       padding: 8px 0px 7px 0px;
+    }
+    &__active{
+      @include link(#caa466, #caa466);
     }
   }
   &_title{

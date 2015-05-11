@@ -1,0 +1,70 @@
+.readyitem {
+  font-family: arial;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin: 10px 0 0;
+  //text-align: center;
+  padding-left: 30px;
+  overflow: hidden;
+  &_image{
+    width: 437px;
+    height: 352px;
+    float: left;
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &_text{
+    width: 437px;
+    float: left;
+    margin-left: 13px;
+  }
+  &_title{
+    text-align: center;
+    color: #3e3e3e;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 16px;
+  }
+  &_art{
+    text-align: center;
+    padding: 7px 0px 23px 0px;
+    font-size: 12px;
+  }
+  &_descr{
+    padding: 0px 23px 0px 23px;
+    height: 255px;
+    p{
+      font-family: arial;
+      line-height: 1.2;
+      margin: 0px;
+    }
+  }
+  &_link{
+    display: block;
+    padding: 6px 0px;
+    width: 190px;
+    margin: 0px auto 0px auto;
+    @include link(#3e3e3e, #3e3e3e);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #e3e2e1;
+    text-align: center;
+    @include def-border-radius(3px);
+  }
+  &_wrap{
+    /*position: absolute;
+    display: none;
+    top: 0px;
+    left: 30px;
+    width: 90.2%;
+    height: 100%;
+    background-color: #fdfcfb;
+    opacity: 1;*/
+  }
+}
