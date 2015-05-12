@@ -1,0 +1,13 @@
+.ready{
+  overflow: hidden;
+  &_left{
+    width: 383px;
+    float: left;
+  }
+  &_right{
+    margin-left: 423px;
+  }
+  &_head{
+    font-weight: bold;
+  }
+}
