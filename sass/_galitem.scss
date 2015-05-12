@@ -57,6 +57,10 @@
     border: 1px solid #e3e2e1;
     text-align: center;
     @include def-border-radius(3px);
+    @include def-transition(background-color, 0.2s);
+    &:hover{
+      background-color: #f2f2f1;
+    }
   }
   &_wrap{
     /*position: absolute;

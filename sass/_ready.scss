@@ -1,4 +1,6 @@
 .ready{
+  font-family: arial;
+  line-height: 1.3;
   overflow: hidden;
   &_left{
     width: 383px;
@@ -9,5 +11,52 @@
   }
   &_head{
     font-weight: bold;
+    margin: 0px 0px 0px 0px;
+  }
+  &_descr{
+    padding: 0px 15px 0px 0px;
+    p{
+      font-family: arial;
+      line-height: 1.3;
+      margin: 0px;
+    }
+  }
+  &_title{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+  }
+  &_art{
+    font-size: 12px;
+    text-align: center;
+    margin: 6px 0px 18px 0px;
+  }
+  &_price{
+    text-align: center;
+    font-weight: bold;
+    margin: -7px 0px 0px 0px;
+  }
+  &_note{
+    font-size: 12px;
+    margin: 7px 0px 14px 0px;
+  }
+  &_link{
+    display: block;
+    padding: 6px 0px;
+    width: 280px;
+    margin: 15px auto 0px auto;
+    @include link(#3e3e3e, #3e3e3e);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #e3e2e1;
+    text-align: center;
+    @include def-border-radius(3px);
+    @include def-transition(background-color, 0.2s);
+    &:hover{
+      background-color: #f2f2f1;
+    }
   }
 }

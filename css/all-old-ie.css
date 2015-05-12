@@ -357,9 +357,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: -19px;
   width: 0;
   height: 0;
-  border-left: 22px solid transparent;
-  border-right: 22px solid transparent;
-  border-bottom: 23px solid #fdfcfb;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-bottom: 24px solid #fdfcfb;
   /*border-style: solid;
   border-width: 0 20px 20px 20px;
   border-color: transparent transparent #fdfcfb transparent;*/
@@ -1487,6 +1487,11 @@ h1 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .catitem_link:visited {
   color: #3e3e3e;
@@ -1499,6 +1504,9 @@ h1 {
 }
 .catitem_link:focus {
   color: #3e3e3e;
+}
+.catitem_link:hover {
+  background-color: #f2f2f1;
 }
 .catitem_wrap {
   /*position: absolute;
@@ -1572,6 +1580,11 @@ h1 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .galitem_link:visited {
   color: #3e3e3e;
@@ -1584,6 +1597,9 @@ h1 {
 }
 .galitem_link:focus {
   color: #3e3e3e;
+}
+.galitem_link:hover {
+  background-color: #f2f2f1;
 }
 .galitem_wrap {
   /*position: absolute;
@@ -1656,6 +1672,11 @@ h1 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .readyitem_link:visited {
   color: #3e3e3e;
@@ -1668,6 +1689,9 @@ h1 {
 }
 .readyitem_link:focus {
   color: #3e3e3e;
+}
+.readyitem_link:hover {
+  background-color: #f2f2f1;
 }
 .readyitem_wrap {
   /*position: absolute;
@@ -2006,6 +2030,8 @@ h1 {
 }
 
 .ready {
+  font-family: arial;
+  line-height: 1.3;
   overflow: hidden;
 }
 .ready_left {
@@ -2017,8 +2043,76 @@ h1 {
 }
 .ready_head {
   font-weight: bold;
+  margin: 0px 0px 0px 0px;
+}
+.ready_descr {
+  padding: 0px 15px 0px 0px;
+}
+.ready_descr p {
+  font-family: arial;
+  line-height: 1.3;
+  margin: 0px;
+}
+.ready_title {
+  font-family: arial;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+.ready_art {
+  font-size: 12px;
+  text-align: center;
+  margin: 6px 0px 18px 0px;
+}
+.ready_price {
+  text-align: center;
+  font-weight: bold;
+  margin: -7px 0px 0px 0px;
+}
+.ready_note {
+  font-size: 12px;
+  margin: 7px 0px 14px 0px;
+}
+.ready_link {
+  display: block;
+  padding: 6px 0px;
+  width: 280px;
+  margin: 15px auto 0px auto;
+  color: #3e3e3e;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #e3e2e1;
+  text-align: center;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.ready_link:visited {
+  color: #3e3e3e;
+}
+.ready_link:hover {
+  color: #3e3e3e;
+}
+.ready_link:active {
+  color: #3e3e3e;
+}
+.ready_link:focus {
+  color: #3e3e3e;
+}
+.ready_link:hover {
+  background-color: #f2f2f1;
 }
 
+.readysize {
+  margin: 5px 0px 0px 0px;
+}
 .readysize_row {
   margin: 0px 0px 3px 0px;
   overflow: hidden;
@@ -2529,7 +2623,7 @@ h1 {
   position: relative;
   overflow: hidden;
   padding: 0px 0px 0px 10px;
-  height: 321px;
+  height: 205px;
 }
 .view-filters label {
   font-family: arial;
@@ -2562,6 +2656,9 @@ h1 {
 #edit-field-art-value-wrapper input:focus {
   background-color: #ededed;
 }
+#edit-field-art-value-wrapper > label {
+  font-weight: bold;
+}
 
 #edit-field-width-value-wrapper {
   width: 280px;
@@ -2588,25 +2685,27 @@ h1 {
 }
 
 #edit-field-material-tid-wrapper {
-  width: 280px;
+  /*width: 280px;*/
   float: none;
   position: absolute;
   top: 0px;
-  left: 385px;
+  left: 310px;
 }
 #edit-field-material-tid-wrapper > label {
-  margin: 0px 0px 5px 22px;
+  margin: 0px 0px 5px 20px;
+  font-weight: bold;
 }
 
 #edit-field-color-tid-wrapper {
-  width: 280px;
+  /*width: 280px;*/
   float: none;
   position: absolute;
-  top: 0px;
-  left: 650px;
+  top: 71px;
+  left: 310px;
 }
 #edit-field-color-tid-wrapper > label {
-  margin: 0px 0px 5px 22px;
+  margin: 0px 0px 5px 20px;
+  font-weight: bold;
 }
 
 /*input[type="checkbox"] {
@@ -2636,8 +2735,8 @@ input[type="checkbox"] + label:before {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   position: absolute;
-  top: 4px;
-  left: 0px;
+  top: 0px;
+  left: 37%;
   background: url("../image/checkbox.png") no-repeat;
   -webkit-transition: box-shadow 0.2s ease-in-out;
   -moz-transition: box-shadow 0.2s ease-in-out;
@@ -2649,7 +2748,7 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"] + label {
   position: relative;
   display: block;
-  padding: 7px 0px 7px 23px;
+  padding: 20px 0px 20px 0px;
   margin: 0px 0px 0px 0px;
 }
 input[type="checkbox"] + label:hover {
@@ -2663,6 +2762,18 @@ input[type="checkbox"] + label:hover:before {
 
 input[type="checkbox"]:checked + label:before {
   background-position: -20px 0px;
+}
+
+.bef-checkboxes {
+  overflow: hidden;
+}
+
+.bef-checkboxes .form-type-bef-checkbox {
+  float: left;
+  width: 86px;
+}
+.bef-checkboxes .form-type-bef-checkbox > label {
+  text-align: center;
 }
 
 .contacts_row {
@@ -2985,8 +3096,8 @@ input[type="checkbox"]:checked + label:before {
   left: -20px;
 }
 .view-filters .ajax-progress {
-  bottom: 0px;
-  left: 0px;
+  bottom: -5px;
+  left: 47%;
 }
 .ajax-progress .throbber {
   background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px;

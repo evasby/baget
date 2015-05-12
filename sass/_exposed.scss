@@ -57,7 +57,7 @@
   position: relative;
   overflow: hidden;
   padding: 0px 0px 0px 10px;
-  height: 321px;
+  height: 205px;
   label{
     font-family: arial;
     font-weight: normal;
@@ -82,6 +82,9 @@
       background-color: #ededed;
     }
   }
+  & > label{
+    font-weight: bold;
+  }
 }
 #edit-field-width-value-wrapper{
   width: 280px;
@@ -105,23 +108,25 @@
   }
 }
 #edit-field-material-tid-wrapper{
-  width: 280px;
+  /*width: 280px;*/
   float: none;
   position: absolute;
   top: 0px;
-  left: 385px;
+  left: 310px;
   & > label{
-    margin: 0px 0px 5px 22px;
+    margin: 0px 0px 5px 20px;
+    font-weight: bold;
   }
 }
 #edit-field-color-tid-wrapper{
-  width: 280px;
+  /*width: 280px;*/
   float: none;
   position: absolute;
-  top: 0px;
-  left: 650px;
+  top: 71px;
+  left: 310px;
   & > label{
-    margin: 0px 0px 5px 22px;
+    margin: 0px 0px 5px 20px;
+    font-weight: bold;
   }
 }
 
@@ -151,8 +156,8 @@ input[type="checkbox"] + label:before {
     height: 20px;
     @include def-border-radius(3px);
     position: absolute;
-    top: 4px;
-    left: 0px;
+    top: 0px;
+    left: 37%;
     //margin: 0px 4px 0px 0px;
     background: url('../image/checkbox.png') no-repeat;
     @include def-transition(box-shadow, 0.2s);
@@ -160,7 +165,7 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"] + label {
     position: relative;
     display: block;
-    padding: 7px 0px 7px 23px;
+    padding: 20px 0px 20px 0px;
     margin: 0px 0px 0px 0px;
     &:hover{
       cursor: pointer;
@@ -173,4 +178,14 @@ input[type="checkbox"] + label {
 }
 input[type="checkbox"]:checked + label:before {
     background-position: -20px 0px;
+}
+.bef-checkboxes{
+  overflow: hidden;
+}
+.bef-checkboxes .form-type-bef-checkbox{
+  float: left;
+  width: 86px;
+  & > label{
+    text-align: center;
+  }
 }
