@@ -170,8 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 0px;
   background: url(../image/arrows-main.png) no-repeat 20px 0px;
 }
-.slider .bx-wrapper .bx-prev:hover,
-.slider .bx-wrapper .bx-prev:focus {
+.slider .bx-wrapper .bx-prev:hover {
   opacity: 1;
 }
 .slider .bx-wrapper .bx-next {
