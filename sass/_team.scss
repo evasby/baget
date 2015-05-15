@@ -1,0 +1,59 @@
+.team{
+  overflow: hidden;
+  padding: 0px 0px 0px 25px;
+  font-family: arial;
+  &_item{
+    float: left;
+    width: 255px;
+    margin: 0px 0px 0px 69px;
+    &:nth-child(3n + 1){
+      margin: 0px 0px 0px 0px;
+    }
+    @include old-ie{
+      &:first-child {
+        margin: 0px 0px 0px 0px;
+      }
+      &:first-child + * + * + * {
+        margin: 0px 0px 0px 0px;
+      }
+      &:first-child + * + * + * + * + * + *{
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+  &_image{
+    width: 113px;
+    height: 113px;
+    margin: 0px auto 10px auto;
+    overflow: hidden;
+    @include def-border-radius(50%);
+  }
+  &_name{
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+  }
+  &_job{
+    font-size: 14px;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+  &_descr{
+    font-size: 14px;
+    text-align: justify;
+    position: relative;
+    line-height: 1.2;
+    height: 213px;
+    &:before{
+      content: "";
+      display: block;
+      width: 255px;
+      height: 10px;
+      position: absolute;
+      top: -19px;
+      left: 0px;
+      background: url('../image/hr.png') no-repeat;
+    }
+  }
+}

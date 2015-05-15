@@ -28,7 +28,6 @@
     height: 71px;
     margin: 0px 18px 0px 0px;
     border: 1px solid #eaeaea;
-    background: url('../image/sub2.png') no-repeat 10px 8px;
     @include def-border-radius(3px);
     @include def-transition(background-color, 0.2s);
     &.active{
@@ -36,6 +35,9 @@
     }
     &:hover{
       background-color: #ededed;
+    }
+    &__subway{
+      background: url('../image/sub2.png') no-repeat 10px 8px;
     }
   }
 }
