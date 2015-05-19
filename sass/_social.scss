@@ -1,0 +1,25 @@
+.social{
+  overflow: hidden;
+  background-color: #ebebeb;
+  margin: 23px 0px 0px 23px;
+  padding: 4px 0px 4px 152px;
+  &_link{
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    margin: 0px 24px 0px 0px;
+    &__vk{
+      background: url('../image/social/vk.png') no-repeat;
+    }
+    &__ok{
+      background: url('../image/social/ok.png') no-repeat;
+    }
+    &__fb{
+      background: url('../image/social/fb.png') no-repeat;
+    }
+  }
+}

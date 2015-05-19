@@ -551,13 +551,16 @@ h1 {
 }
 
 .page-gallery #cboxLoadedContent, .page-taxonomy-term #cboxLoadedContent {
-  padding: 35px;
   background-color: #ffffff;
 }
 .page-gallery #cboxLoadedContent img, .page-taxonomy-term #cboxLoadedContent img {
   -webkit-box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.cboxPhoto {
+  margin: 35px;
 }
 
 .inner {
@@ -1016,6 +1019,32 @@ h1 {
 }
 .services_link:focus {
   color: #7e7a6c;
+}
+
+.social {
+  overflow: hidden;
+  background-color: #ebebeb;
+  margin: 23px 0px 0px 23px;
+  padding: 4px 0px 4px 152px;
+}
+.social_link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  margin: 0px 24px 0px 0px;
+}
+.social_link__vk {
+  background: url("../image/social/vk.png") no-repeat;
+}
+.social_link__ok {
+  background: url("../image/social/ok.png") no-repeat;
+}
+.social_link__fb {
+  background: url("../image/social/fb.png") no-repeat;
 }
 
 .catready {
@@ -1510,7 +1539,7 @@ h1 {
 }
 .galitem_descr {
   padding: 0px 23px 0px 23px;
-  height: 255px;
+  height: 205px;
 }
 .galitem_descr p {
   font-family: arial;
@@ -1554,6 +1583,7 @@ h1 {
   background-color: #f2f2f1;
 }
 .galitem_wrap {
+  overflow: hidden;
   /*position: absolute;
   display: none;
   top: 0px;
@@ -1949,6 +1979,150 @@ h1 {
 
 #cboxClose:hover {
   background-position: 0px 0px;
+}
+
+.order2 {
+  position: relative;
+  height: 390px;
+}
+.order2_title {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px 0px 30px 0px;
+}
+.order2_header {
+  height: 37px;
+  background-color: #eaeae9;
+}
+.order2 form {
+  margin: 0px 27px;
+}
+.order2 .form-item, .order2 .form-actions {
+  margin: 0px 0px 2px 0px;
+}
+.order2 .webform-component-textfield input {
+  height: 31px;
+  width: 508px;
+  border: 1px solid #dad9d9;
+  padding-left: 5px;
+}
+.order2 .webform-component-textfield input.error {
+  background-color: #fabbcf;
+}
+.order2 .webform-component-email input {
+  height: 31px;
+  padding-left: 5px;
+  border: 1px solid #dad9d9;
+  width: 508px;
+}
+.order2 .webform-component-select {
+  margin-right: -4px;
+}
+.order2 .webform-component-select select {
+  height: 31px;
+  width: 100%;
+  border: 1px solid #dad9d9;
+}
+.order2 .form-actions {
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  position: relative;
+}
+.order2 .form-actions input {
+  background-color: #fdfcfb;
+  border: 1px solid #e5e4e4;
+  width: 209px;
+  font-size: 17px;
+  color: #3e3e3e;
+  text-transform: uppercase;
+  font-family: arial;
+  padding: 7px 0px;
+}
+.order2 .form-actions input:hover {
+  cursor: pointer;
+}
+.order2 .messages.error {
+  display: none;
+}
+.order2_confirmation p {
+  text-align: center;
+  padding: 0px 15px;
+}
+.order2 .webform-component--quanity input {
+  border: 1px solid #dad9d9;
+  height: 31px;
+  padding-left: 5px;
+  width: 508px;
+}
+.order2 .webform-component--quanity input.error {
+  background-color: #fabbcf;
+}
+.order2 .webform-component--name2 input {
+  padding-left: 13px;
+  width: 500px;
+}
+.order2 .webform-component--email input {
+  padding-left: 13px;
+  width: 500px;
+}
+.order2 .webform-component--format select {
+  color: #757575;
+}
+.order2 .webform-component--format select.error {
+  background-color: #fabbcf;
+}
+.order2 .webform-component--format {
+  width: 516px;
+}
+.order2 .form-actions .ajax-progress {
+  bottom: 6px;
+  left: 158px;
+}
+
+.webform-component-file {
+  position: relative;
+  border: 1px solid #dad9d9;
+  height: 31px;
+  padding-left: 5px;
+  width: 508px;
+  /*label{
+    float: left;
+    width: 100px;
+    margin: 0px;
+  }*/
+}
+.webform-component-file div.ajax-progress {
+  position: absolute;
+  width: 10px;
+  bottom: 2px;
+  left: auto;
+  right: 90px;
+}
+.webform-component-file label {
+  margin: 5px 5px 0px 0px;
+  color: #757575;
+}
+.webform-component-file .form-file {
+  margin: 3px 0px 0px 0px;
+  cursor: pointer;
+}
+.webform-component-file .form-submit {
+  background-color: #fdfcfb;
+  border: 1px solid #e5e4e4;
+  color: #3e3e3e;
+  font-family: arial;
+  font-size: 12px;
+  padding: 2px 0;
+  margin: 4px 5px 0px 0px;
+  text-transform: uppercase;
+  width: 80px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.webform-component-file div.description {
+  display: none;
 }
 
 .stock {
@@ -3324,6 +3498,34 @@ input[type="checkbox"]:checked + label:before {
   margin: 0 auto 10px auto;
   width: 59px;
   height: 55px;
+}
+
+.icons2 {
+  height: 97px;
+  font-family: arial;
+  font-size: 9px;
+  line-height: 1.4;
+  color: #4b4a4a;
+  font-weight: bold;
+  overflow: hidden;
+  padding-top: 24px;
+}
+.icons2_item {
+  width: 150px;
+  float: left;
+  margin-left: 38px;
+}
+.icons2_item:first-child {
+  margin-left: 36px;
+}
+.icons2_text {
+  text-align: center;
+}
+.icons2_image {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 75px;
+  height: 50px;
 }
 
 .quickmenu {
