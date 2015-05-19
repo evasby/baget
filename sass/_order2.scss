@@ -108,9 +108,9 @@
 .webform-component-file{
   position: relative;
   border: 1px solid #dad9d9;
-  height: 31px;
-  padding-left: 5px;
-  width: 508px;
+  height: 27px;
+  padding: 4px 0px 0px 13px;
+  width: 501px;
   div.ajax-progress {
     position: absolute;
     width: 10px;
@@ -126,9 +126,11 @@
   label{
     margin: 5px 5px 0px 0px;
     color: #757575;
+    font-family: myriad, helvetica, arial, sans-serif;
+    font-size: 14px;
   }
   .form-file{
-    margin: 3px 0px 0px 0px;
+    //margin: 4px 0px 0px 0px;
     cursor: pointer;
   }
   .form-submit{
@@ -149,4 +151,7 @@
   div.description{
     display: none;
   }
+  //#edit-submitted-file-upload{
+    //padding-top: 3px;
+  //}
 }
