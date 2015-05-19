@@ -1,0 +1,10 @@
+.feedback3{
+	.messages{
+    display: none;
+  }
+  position: relative;
+  &_title{
+    text-transform: uppercase;
+    padding: 0px 0px 15px 0px;
+  }
+}

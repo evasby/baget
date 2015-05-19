@@ -30,6 +30,15 @@ h1{
     }
   }
 }
+.page-gallery #cboxLoadedContent, .page-taxonomy-term #cboxLoadedContent{
+  padding: 35px;
+  background-color: #ffffff;
+  img{
+    -webkit-box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.75);
+  }
+}
 
 //**********************************************************/
 //**********************************************************/
@@ -51,6 +60,8 @@ h1{
 @import "galitem";
 @import "readyitem";
 @import "team";
+@import "review";
+@import "feedback3";
 @import "quickabout";
 @import "order";
 @import "stock";

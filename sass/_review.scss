@@ -1,0 +1,44 @@
+.review{
+	padding: 0px 27px 27px 27px;
+	font-family: arial;
+	color: #000000;
+	&_item{
+		margin: 44px 0px 0px 0px;
+		&:first-child{
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	&_top{
+		overflow: hidden;
+	}
+	&_image{
+		width: 113px;
+		float: left;
+		overflow: hidden;
+		@include def-border-radius(50%);
+		img{
+			display: block;
+		}
+	}
+	&_wrap{
+		margin: 15px 0px 0px 168px;
+	}
+	&_name{
+		font-size: 16px;
+		margin: 0px 0px 16px 0px;
+	}
+	&_job{
+		font-size: 16px;
+		margin: 0px 0px 16px 0px;
+	}
+	&_link{
+		font-size: 16px;
+		@include link(#937036, #937036);
+	}
+	&_descr{
+		padding: 25px 0px 0px 0px;
+		p{
+			line-height: 1.2;
+		}
+	}
+}

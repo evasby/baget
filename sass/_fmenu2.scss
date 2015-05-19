@@ -24,8 +24,11 @@
     font-family: arial;
     font-style: italic;
     font-size: 11px;
-    @include def-link-colors(#333, #333, #333, #333, #333);
+    @include def-link-colors(#333, #ac8227, #333, #333, #333);
     text-decoration: none;
+    &__active{
+      @include link(#ac8227, #ac8227);
+    }
     &:after{
       display: inline;
       content: " >";

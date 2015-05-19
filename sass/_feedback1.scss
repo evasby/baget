@@ -81,4 +81,23 @@
       padding: 0px 15px;
     }
   }
+  &__full{
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    .feedback1_title{
+      text-align: left;
+      padding: 0px 0px 15px 19px;
+    }
+    .feedback1_inner input{
+      text-align: left;
+      padding: 0px 0px 0px 19px;
+    }
+    .feedback1_inner textarea{
+      text-align: left;
+      padding: 5px 0px 0px 19px;
+    }
+    button, .webform-submit{
+      margin: 0px;
+    }
+  }
 }

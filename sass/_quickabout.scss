@@ -1,6 +1,57 @@
 .quickabout{
   overflow: hidden;
+  font-family: arial;
+  color: #000000;
+  a{
+  	@include link(#525252, #525252);
+  }
+  &_title{
+		color: #525252;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 16px;
+		margin: 0px 0px 4px 0px;
+  }
   &_item{
     float: left;
+    width: 300px;
+    margin: 0px 0px 0px 26px;
+    &:first-child{
+    	margin: 0px 0px 0px 0px;
+    }
+  }
+  &_link{
+  	@include link(#525252, #525252);
+  	display: block;
+  	text-align: center;
+  	margin: 0px 0px 22px 0px;
+  }
+  &_top{
+  	overflow: hidden;
+  	margin: 0px 0px 10px 0px;
+  }
+  &_image{
+  	float: left;
+  	width: 63px;
+  	overflow: hidden;
+  	@include def-border-radius(3px);
+  	img{
+  		display: block;
+  	}
+  }
+  &_wrap{
+  	margin: 12px 0px 0px 79px;
+  }
+  &_name{
+  	font-size: 14px;
+  	margin: 0px 0px 7px 0px;
+  }
+  &_job{
+  	font-size: 12px;
+  }
+  &_descr{
+  	font-size: 12px;
+  	padding: 0px 0px 1px 0px;
+  	line-height: 1.2;
   }
 }

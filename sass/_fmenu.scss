@@ -13,7 +13,10 @@
   &_link{
     font-family: arial;
     font-size: 11px;
-    @include def-link-colors(#4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a);
+    @include def-link-colors(#4b4a4a, #ac8227, #4b4a4a, #4b4a4a, #4b4a4a);
     text-decoration: none;
+    &__active{
+      @include link(#ac8227, #ac8227);
+    }
   }
 }
