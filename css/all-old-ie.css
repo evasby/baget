@@ -574,17 +574,53 @@ input::-webkit-input-placeholder {
   line-height: 1.2;
 }
 
-.page-gallery #cboxLoadedContent, .page-taxonomy-term #cboxLoadedContent {
+/*.page-gallery #cboxLoadedContent, .page-taxonomy-term #cboxLoadedContent{
   background-color: #ffffff;
+  img{
+    display: block;
+    -webkit-box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.75);
+  }
 }
-.page-gallery #cboxLoadedContent img, .page-taxonomy-term #cboxLoadedContent img {
+.cboxPhoto{
+  margin: 35px!important;
+  height: 100%!important;
+}*/
+.customcolorbox#colorbox {
+  background-color: #ffffff !important;
+}
+
+.customcolorbox #cboxTopCenter, .customcolorbox #cboxBottomCenter {
+  height: 35px !important;
+}
+
+.customcolorbox #cboxMiddleLeft, .customcolorbox #cboxMiddleRight {
+  width: 35px !important;
+}
+
+.customcolorbox #cboxContent {
   -webkit-box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.75);
   box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  overflow: visible;
 }
 
-.cboxPhoto {
-  margin: 35px;
+.customcolorbox #cboxClose {
+  top: -33px;
+  right: -33px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 205px;
+  width: 920px;
+  background-color: #fdfcfb;
+}
+
+.padding-top {
+  padding-top: 205px;
 }
 
 .inner {
@@ -1020,6 +1056,7 @@ input::-webkit-input-placeholder {
   overflow: hidden;
   background-color: #fff;
   padding-left: 10px;
+  height: 24px;
 }
 .search_link {
   float: right;
@@ -2833,7 +2870,7 @@ input::-webkit-input-placeholder {
   clear: both;
   overflow: hidden;
   text-align: right;
-  padding: 13px 38px 0px 0px;
+  padding: 13px 38px 5px 0px;
 }
 .gallery_more a {
   font-family: arial;
@@ -3052,10 +3089,14 @@ input::-webkit-input-placeholder {
 }
 
 .view-filters {
+  background-color: #fdfcfb;
+  height: 205px;
+  width: 920px;
+}
+.view-filters .views-exposed-form {
   position: relative;
   overflow: hidden;
   padding: 0px 0px 0px 10px;
-  height: 205px;
 }
 .view-filters label {
   font-family: arial;
