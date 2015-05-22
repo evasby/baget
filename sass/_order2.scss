@@ -13,23 +13,26 @@
   form{
     margin: 0px 27px;
   }
+  .form-item{
+    width: 514px;
+  }
+  .form-item input{
+    width: 100%;
+    height: 33px;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
   .form-item, .form-actions{
     margin: 0px 0px 2px 0px;
   }
   .webform-component-textfield input{
-    height: 31px;
-    width: 508px;
     border: 1px solid #dad9d9;
-    padding-left: 5px;
     &.error{
       background-color: #fabbcf;
     }
   }
   .webform-component-email input{
-    height: 31px;
-    padding-left: 5px;
     border: 1px solid #dad9d9;
-    width: 508px;
   }
   .webform-component-select{
     margin-right: -4px;
@@ -73,20 +76,13 @@
   }
   .webform-component--quanity input{
     border: 1px solid #dad9d9;
-    height: 31px;
-    padding-left: 5px;
-    width: 508px;
     &.error{
       background-color: #fabbcf;
     }
   }
   .webform-component--name2 input{
-    padding-left: 13px;
-    width: 500px;
   }
   .webform-component--email input{
-    padding-left: 13px;
-    width: 500px;
   }
   .webform-component--format select{
     color: #757575;
@@ -95,63 +91,74 @@
     }
   }
   .webform-component--format{
-    width: 516px;
+    
   }
   .form-actions .ajax-progress {
     bottom: 6px;
     left: 158px;
   }
+
+  .webform-component--descr textarea{
+    padding: 5px 0px 0px 5px;
+    border: 1px solid #dad9d9;
+  }
+
+  .webform-component-file{
+    position: relative;
+    border: 1px solid #dad9d9;
+    height: 33px;
+    padding: 3px 0px 0px 5px;
+    width: 514px;
+    box-sizing: border-box;
+    div.ajax-progress {
+      position: absolute;
+      width: 10px;
+      bottom: 2px;
+      left: auto;
+      right: 90px;
+    }
+    /*label{
+      float: left;
+      width: 100px;
+      margin: 0px;
+    }*/
+    label{
+      margin: 5px 5px 0px 0px;
+      color: #757575;
+      font-family: myriad, helvetica, arial, sans-serif;
+      font-size: 14px;
+    }
+    .form-file{
+      //margin: 4px 0px 0px 0px;
+      cursor: pointer;
+      width: auto;
+      height: auto;
+    }
+    .form-submit{
+      background-color: #fdfcfb;
+      border: 1px solid #e5e4e4;
+      color: #3e3e3e;
+      font-family: arial;
+      font-size: 12px;
+      padding: 2px 0;
+      margin: 4px 5px 0px 0px;
+      text-transform: uppercase;
+      width: 80px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      cursor: pointer;
+      height: 23px;
+    }
+    div.description{
+      display: none;
+    }
+    //#edit-submitted-file-upload{
+      //padding-top: 3px;
+    //}
+  }
+
 }
 
 
 
-.webform-component-file{
-  position: relative;
-  border: 1px solid #dad9d9;
-  height: 27px;
-  padding: 4px 0px 0px 13px;
-  width: 501px;
-  div.ajax-progress {
-    position: absolute;
-    width: 10px;
-    bottom: 2px;
-    left: auto;
-    right: 90px;
-  }
-  /*label{
-    float: left;
-    width: 100px;
-    margin: 0px;
-  }*/
-  label{
-    margin: 5px 5px 0px 0px;
-    color: #757575;
-    font-family: myriad, helvetica, arial, sans-serif;
-    font-size: 14px;
-  }
-  .form-file{
-    //margin: 4px 0px 0px 0px;
-    cursor: pointer;
-  }
-  .form-submit{
-    background-color: #fdfcfb;
-    border: 1px solid #e5e4e4;
-    color: #3e3e3e;
-    font-family: arial;
-    font-size: 12px;
-    padding: 2px 0;
-    margin: 4px 5px 0px 0px;
-    text-transform: uppercase;
-    width: 80px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    cursor: pointer;
-  }
-  div.description{
-    display: none;
-  }
-  //#edit-submitted-file-upload{
-    //padding-top: 3px;
-  //}
-}

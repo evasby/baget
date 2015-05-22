@@ -4,6 +4,7 @@
    @include link(#caa466, #caa466);
    position: relative;
    margin: 0px 5px 0px 0px;
+   font-size: 12px;
    &:before{
       background: url("../image/bread.png")no-repeat #fff;
       content: "";
@@ -44,6 +45,7 @@
  &_item{
    color: #caa466;
    position: relative;
+   font-size: 12px;
    &:before{
       background: url("../image/bread.png")no-repeat #fff;
       content: "";

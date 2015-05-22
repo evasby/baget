@@ -546,7 +546,17 @@ input:focus {
   outline: none;
 }
 
+textarea:focus {
+  outline: none;
+}
+
 input::-moz-placeholder {
+  color: #757575;
+  font-family: myriad, helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+
+textarea::-moz-placeholder {
   color: #757575;
   font-family: myriad, helvetica, arial, sans-serif;
   font-size: 14px;
@@ -557,7 +567,17 @@ input {
   font-size: 14px;
 }
 
+textarea {
+  font-family: myriad, helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+
 input::-webkit-input-placeholder {
+  color: #757575;
+  font-family: myriad, helvetica, arial, sans-serif;
+}
+
+textarea::-webkit-input-placeholder {
   color: #757575;
   font-family: myriad, helvetica, arial, sans-serif;
 }
@@ -639,6 +659,7 @@ input::-webkit-input-placeholder {
   color: #caa466;
   position: relative;
   margin: 0px 5px 0px 0px;
+  font-size: 12px;
   *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="breadcrumb_before" );
 }
 .breadcrumb_link:visited {
@@ -684,6 +705,7 @@ input::-webkit-input-placeholder {
 .breadcrumb_item {
   color: #caa466;
   position: relative;
+  font-size: 12px;
   *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="breadcrumb_before" );
 }
 .breadcrumb_item:before {
@@ -2121,23 +2143,26 @@ input::-webkit-input-placeholder {
 .order2 form {
   margin: 0px 27px;
 }
+.order2 .form-item {
+  width: 514px;
+}
+.order2 .form-item input {
+  width: 100%;
+  height: 33px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
 .order2 .form-item, .order2 .form-actions {
   margin: 0px 0px 2px 0px;
 }
 .order2 .webform-component-textfield input {
-  height: 31px;
-  width: 508px;
   border: 1px solid #dad9d9;
-  padding-left: 5px;
 }
 .order2 .webform-component-textfield input.error {
   background-color: #fabbcf;
 }
 .order2 .webform-component-email input {
-  height: 31px;
-  padding-left: 5px;
   border: 1px solid #dad9d9;
-  width: 508px;
 }
 .order2 .webform-component-select {
   margin-right: -4px;
@@ -2174,20 +2199,9 @@ input::-webkit-input-placeholder {
 }
 .order2 .webform-component--quanity input {
   border: 1px solid #dad9d9;
-  height: 31px;
-  padding-left: 5px;
-  width: 508px;
 }
 .order2 .webform-component--quanity input.error {
   background-color: #fabbcf;
-}
-.order2 .webform-component--name2 input {
-  padding-left: 13px;
-  width: 500px;
-}
-.order2 .webform-component--email input {
-  padding-left: 13px;
-  width: 500px;
 }
 .order2 .webform-component--format select {
   color: #757575;
@@ -2195,43 +2209,46 @@ input::-webkit-input-placeholder {
 .order2 .webform-component--format select.error {
   background-color: #fabbcf;
 }
-.order2 .webform-component--format {
-  width: 516px;
-}
 .order2 .form-actions .ajax-progress {
   bottom: 6px;
   left: 158px;
 }
-
-.webform-component-file {
+.order2 .webform-component--descr textarea {
+  padding: 5px 0px 0px 5px;
+  border: 1px solid #dad9d9;
+}
+.order2 .webform-component-file {
   position: relative;
   border: 1px solid #dad9d9;
-  height: 27px;
-  padding: 4px 0px 0px 13px;
-  width: 501px;
+  height: 33px;
+  padding: 3px 0px 0px 5px;
+  width: 514px;
+  box-sizing: border-box;
   /*label{
     float: left;
     width: 100px;
     margin: 0px;
   }*/
 }
-.webform-component-file div.ajax-progress {
+.order2 .webform-component-file div.ajax-progress {
   position: absolute;
   width: 10px;
   bottom: 2px;
   left: auto;
   right: 90px;
 }
-.webform-component-file label {
+.order2 .webform-component-file label {
   margin: 5px 5px 0px 0px;
   color: #757575;
   font-family: myriad, helvetica, arial, sans-serif;
   font-size: 14px;
 }
-.webform-component-file .form-file {
+.order2 .webform-component-file .form-file {
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
-.webform-component-file .form-submit {
+.order2 .webform-component-file .form-submit {
   background-color: #fdfcfb;
   border: 1px solid #e5e4e4;
   color: #3e3e3e;
@@ -2245,8 +2262,9 @@ input::-webkit-input-placeholder {
   right: 0px;
   top: 0px;
   cursor: pointer;
+  height: 23px;
 }
-.webform-component-file div.description {
+.order2 .webform-component-file div.description {
   display: none;
 }
 
@@ -2262,8 +2280,10 @@ input::-webkit-input-placeholder {
   /* IMAGE CAPTIONS */
 }
 .stock_title {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 13px;
   text-transform: uppercase;
-  font-size: 16px;
   margin: 0px 0px 12px 0px;
 }
 .stock_top {
@@ -2857,8 +2877,9 @@ input::-webkit-input-placeholder {
   transform: scale(1.05);
 }
 .gallery_title {
-  font-family: myriadsemibold;
-  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 13px;
   color: #434342;
   text-transform: uppercase;
   clear: both;
@@ -2924,8 +2945,9 @@ input::-webkit-input-placeholder {
   width: auto;
 }
 .catalogwidth_title {
-  font-family: myriadsemibold;
-  font-size: 15px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 13px;
   color: #434342;
   clear: both;
   float: none;
@@ -2955,6 +2977,19 @@ input::-webkit-input-placeholder {
 }
 .catalogwidth_more a:focus {
   color: #333333;
+}
+.catalogwidth .GI_TW_expander .GI_TW_pointer {
+  /*border-bottom: 24px solid #fdfcfb;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;*/
+  border: 0px;
+  width: 35px;
+  height: 22px;
+  background: url("../image/triangle.png") no-repeat;
+  margin-left: -20px;
+  margin-top: -17px;
+  position: absolute;
+  transition: left 0.3s ease-in 0s;
 }
 
 .advsearch {
@@ -3092,6 +3127,7 @@ input::-webkit-input-placeholder {
   background-color: #fdfcfb;
   height: 205px;
   width: 920px;
+  z-index: 2;
 }
 .view-filters .views-exposed-form {
   position: relative;
@@ -3766,7 +3802,7 @@ input[type="checkbox"]:checked + label:before {
   overflow: hidden;
 }
 .footer_bottom {
-  padding: 8px 0px 20px 0px;
+  padding: 8px 0px 8px 0px;
 }
 
 .follow {
@@ -4121,8 +4157,8 @@ input[type="checkbox"]:checked + label:before {
 
 .wf {
   display: block;
-  width: 138px;
-  height: 37px;
+  width: 146px;
+  height: 40px;
   margin: 0px auto;
   background: url("../image/wf.png") no-repeat;
   text-indent: 100%;

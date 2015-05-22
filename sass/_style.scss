@@ -24,7 +24,15 @@ a:focus{
 input:focus{
   outline: none;
 }
+textarea:focus{
+  outline: none;
+}
 input::-moz-placeholder {
+  color: #757575;
+  font-family: myriad, helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+textarea::-moz-placeholder {
   color: #757575;
   font-family: myriad, helvetica, arial, sans-serif;
   font-size: 14px;
@@ -33,7 +41,15 @@ input{
   font-family: myriad, helvetica, arial, sans-serif;
   font-size: 14px;
 }
+textarea{
+  font-family: myriad, helvetica, arial, sans-serif;
+  font-size: 14px;
+}
 input::-webkit-input-placeholder{
+  color: #757575;
+  font-family: myriad, helvetica, arial, sans-serif;
+}
+textarea::-webkit-input-placeholder{
   color: #757575;
   font-family: myriad, helvetica, arial, sans-serif;
 }
