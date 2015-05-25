@@ -3,7 +3,7 @@
   font-family: arial;
   color: #000000;
   a{
-  	@include link(#525252, #525252);
+  	@include link(#000000, #000000);
   }
   &_title{
 		color: #525252;
@@ -21,10 +21,11 @@
     }
   }
   &_link{
-  	@include link(#525252, #525252);
+  	@include link(#000000, #000000);
   	display: block;
   	text-align: center;
   	margin: 0px 0px 22px 0px;
+    font-size: 12px;
   }
   &_top{
   	overflow: hidden;
@@ -38,6 +39,9 @@
   	img{
   		display: block;
   	}
+    &__round{
+      @include def-border-radius(50%);
+    }
   }
   &_wrap{
   	margin: 12px 0px 0px 79px;

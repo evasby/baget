@@ -55,7 +55,7 @@
 
 .view-filters{
   background-color: #fdfcfb;
-  height: 205px;
+  height: 130px;
   width: 920px;
   z-index: 2;
   .views-exposed-form{
@@ -73,6 +73,9 @@
 #edit-field-art-value-wrapper{
   width: 280px;
   float: none;
+  position: absolute;
+  top: 65px;
+  left: 304px;
   input{
     border: 1px solid #b8b8b8;
     @include def-border-radius(3px);
@@ -117,9 +120,9 @@
   float: none;
   position: absolute;
   top: 0px;
-  left: 310px;
+  left: 304px;
   & > label{
-    margin: 0px 0px 5px 20px;
+    margin: 0px 0px 5px 0px;
     font-weight: bold;
   }
 }
@@ -127,10 +130,10 @@
   /*width: 280px;*/
   float: none;
   position: absolute;
-  top: 71px;
-  left: 310px;
+  top: 0px;
+  left: 600px;
   & > label{
-    margin: 0px 0px 5px 20px;
+    margin: 0px 0px 5px 0px;
     font-weight: bold;
   }
 }
@@ -161,8 +164,8 @@ input[type="checkbox"] + label:before {
     height: 20px;
     @include def-border-radius(3px);
     position: absolute;
-    top: 0px;
-    left: 37%;
+    top: -4px;
+    left: 0px;
     //margin: 0px 4px 0px 0px;
     background: url('../image/checkbox.png') no-repeat;
     @include def-transition(box-shadow, 0.2s);
@@ -170,8 +173,9 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"] + label {
     position: relative;
     display: block;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 23px;
     margin: 0px 0px 0px 0px;
+    height: 20px;
     &:hover{
       cursor: pointer;
       &:before{
@@ -189,8 +193,13 @@ input[type="checkbox"]:checked + label:before {
 }
 .bef-checkboxes .form-type-bef-checkbox{
   float: left;
-  width: 86px;
+  width: 97px;
+  margin: 4px 0px 0px 0px;
+  .form-item-field-color-tid &{
+    width: 100px;
+  }
   & > label{
-    text-align: center;
+    //text-align: center;
+    line-height: 0.8;
   }
 }

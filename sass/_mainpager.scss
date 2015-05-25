@@ -3,7 +3,6 @@
 
   &_title{
     text-transform: uppercase;
-    text-decoration: underline;
     padding: 10px 0px 21px 0px;
     text-align: center;
   }
@@ -14,7 +13,7 @@
     //height: 25%;
     padding: 3px 0px 0px 0px;
     &:first-child{
-      padding: 0px;
+      //padding: 0px;
     }
   }
   &_link{

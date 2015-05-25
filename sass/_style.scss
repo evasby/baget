@@ -56,6 +56,9 @@ textarea::-webkit-input-placeholder{
 .hide{
   display: none;
 }
+.hide__flag{
+  //display: none;
+}
 .field-name-body{
 	ul{
     margin: 0px 0px 15px 15px;
@@ -112,6 +115,7 @@ textarea::-webkit-input-placeholder{
 //**********************************************************/
 //**********************************************************/
 @import "inner";
+@import "flag-wrapper";
 @import "breadcrumb";
 @import "pager";
 @import "header";

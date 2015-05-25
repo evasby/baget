@@ -59,4 +59,41 @@
       background-color: #f2f2f1;
     }
   }
+  &_shops{
+    padding: 15px 0px 15px 0px;
+  }
+  &_shop{
+    padding: 0px 0px 0px 20px;
+    position: relative;
+    a{
+      font-size: 12px;
+      @include link(#caa466, #caa466);
+    }
+    &__sub{
+      &:before{
+        background: url("../image/sub.png") 0px 0px no-repeat;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 12px;
+        position: absolute;
+        left: 0px;
+        top: 5px;
+      }
+      @include old-ie{
+        *zoom: expression(
+          this.runtimeStyle.zoom="1",
+          this.appendChild( document.createElement("small") ).className="before"
+        );
+        .before{
+          background: url("../image/sub.png") 0px 0px no-repeat;
+          width: 20px;
+          height: 12px;      
+          position: absolute;
+          left: 0px;
+          top: 5px; 
+        }
+      }
+    }
+  }
 }

@@ -11,6 +11,7 @@
     width: 437px;
     height: 352px;
     float: left;
+    position: relative;
     img{
       width: 100%;
       height: auto;
@@ -37,7 +38,7 @@
   }
   &_descr{
     padding: 0px 23px 0px 23px;
-    height: 205px;
+    height: 97px;
     p{
       font-family: arial;
       line-height: 1.2;
@@ -72,5 +73,14 @@
     height: 100%;
     background-color: #fdfcfb;
     opacity: 1;*/
+  }
+  &_extra{
+    padding: 23px 0px 0px 23px;
+  }
+  &_extralink{
+    margin: 0px 0px 0px 7px;
+    &:first-child{
+      margin: 0px 0px 0px 0px;
+    }
   }
 }

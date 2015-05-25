@@ -7,7 +7,7 @@
   position: relative;
   &_title{
     text-transform: uppercase;
-    padding: 10px 0px 35px 0px;
+    padding: 10px 0px 18px 0px;
     text-align: center;
     &__2{
       padding: 26px 0px 15px 0px;
@@ -34,6 +34,12 @@
     font-size: 12px;
     line-height: 1.5;
     padding-left: 6px;
+  }
+  &_descr{
+    font-family: arial;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
   }
   &_inner{
     padding: 0px 0px 3px 0px;

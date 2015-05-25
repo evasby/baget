@@ -1,0 +1,66 @@
+.flag-wrapper{
+	position: relative;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+	@include def-transition(opacity, 0.2s);
+	.gallery_item &{
+		display: none;
+	}
+	.galitem_image &{
+		position: absolute;
+		top: 147px;
+		right: 195px;
+		opacity: 0;
+	}
+	.flag-action{
+		/*text-indent: -9999px;
+		overflow: hidden;
+		white-space: nowrap;*/
+		text-align: center;
+		padding: 22px 0px 0px 0px;
+		display: block;
+		width: 57px;
+		height: 35px;
+		background: url('../image/heart.png') no-repeat;
+		@include link(#000000, #000000);
+		text-decoration: none;
+	}
+	.unflag-action{
+		position: relative;
+		/*&:before{
+			background: url("../image/heartmini.png") 0px 0px no-repeat;
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: -15px;
+      top: 0px;
+		}*/
+		text-align: center;
+		padding: 22px 0px 0px 0px; 
+		display: block;
+		width: 57px;
+		height: 35px;
+		background: url('../image/heart.png') no-repeat;
+		@include link(#000000, #000000);
+		text-decoration: none;
+	}
+	.galitem_image:hover & {
+		@include def-opacity(0.5);
+	}
+}
+.flag-waiting {
+	.flag-throbber {
+		position: absolute;
+		bottom: 0px;
+		left: 35%;
+		width: 16px;
+		height: 11px;
+		display: block;
+	  background: url('../image/ajax-loader.gif') no-repeat;
+	  padding-right: 13px;
+	  z-index: 2;
+	}
+}

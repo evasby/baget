@@ -46,14 +46,14 @@
     @include def-link-colors(#4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a);
     text-decoration: none;
     &:before{
-      background: url("../image/social.png") 20px 0px no-repeat;
+      background: url("../image/social2.png") 30px 0px no-repeat;
       content: "";
       display: inline-block;
-      width: 20px;
-      height: 19px;
+      width: 30px;
+      height: 30px;
       position: absolute;
-      left: -32px;
-      top: -2px;
+      left: -42px;
+      top: -9px;
     }
     @include old-ie{
       *zoom: expression(
@@ -61,12 +61,12 @@
         this.appendChild( document.createElement("small") ).className="before"
       );
       .before{
-        background: url("../image/social.png") 20px 0px no-repeat;
-        width: 20px;
-        height: 19px;        
+        background: url("../image/social.png") 30px 0px no-repeat;
+        width: 30px;
+        height: 30px;        
         position: absolute;
-        left: -32px;
-        top: -2px;   
+        left: -42px;
+        top: -9px;   
       }
       &__vk{
         .before{
@@ -75,27 +75,27 @@
       }
       &__ok{
         .before{
-          background-position: -20px 0px;
+          background-position: -30px 0px;
         }
       }
       &__fb{
         .before{
-          background-position: -40px 0px;
+          background-position: -60px 0px;
         }
       }
       &__ig{
         .before{
-          background-position: -60px 0px;
+          background-position: -90px 0px;
         }
       }
       &__tt{
         .before{
-          background-position: -80px 0px;
+          background-position: -120px 0px;
         }
       }
       &__yt{
         .before{
-          background-position: -100px 0px;
+          background-position: -150px 0px;
         }
       }
     }
@@ -106,27 +106,27 @@
     }
     &__ok{
       &:before{
-        background-position: -20px 0px;
+        background-position: -30px 0px;
       }
     }
     &__fb{
       &:before{
-        background-position: -40px 0px;
+        background-position: -60px 0px;
       }
     }
     &__ig{
       &:before{
-        background-position: -60px 0px;
+        background-position: -90px 0px;
       }
     }
     &__tt{
       &:before{
-        background-position: -80px 0px;
+        background-position: -120px 0px;
       }
     }
     &__yt{
       &:before{
-        background-position: -100px 0px;
+        background-position: -150px 0px;
       }
     }
   }
