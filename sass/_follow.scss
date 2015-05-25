@@ -8,7 +8,8 @@
   }
   &_list{
     background-color: #ebebeb;
-    padding: 8px 85px 10px 90px;
+    padding: 12px 85px 0px 90px;
+    height: 29px;
     //overflow: hidden;
     text-align: justify;
     line-height: 0;
@@ -43,6 +44,8 @@
     position: relative;
     font-family: arial;
     font-size: 11px;
+    display: block;
+
     @include def-link-colors(#4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a, #4b4a4a);
     text-decoration: none;
     &:before{
@@ -53,7 +56,7 @@
       height: 30px;
       position: absolute;
       left: -42px;
-      top: -9px;
+      top: -7px;
     }
     @include old-ie{
       *zoom: expression(
@@ -66,7 +69,7 @@
         height: 30px;        
         position: absolute;
         left: -42px;
-        top: -9px;   
+        top: -7px;   
       }
       &__vk{
         .before{

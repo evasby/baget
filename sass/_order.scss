@@ -45,12 +45,14 @@
     width: 100%;
     border: 1px solid #dad9d9;
   }
+  .webform-component--descr textarea{
+    padding: 5px 0px 0px 12px;
+    border: 1px solid #dad9d9;
+  }
   .form-actions{
-    position: absolute;
-    bottom: 0px;
-    left: 180px;
-    //width: 100%;
-    //text-align: center;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    position: relative;
   }
   .form-actions input{
     background-color: #fdfcfb;

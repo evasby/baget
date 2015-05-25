@@ -61,7 +61,7 @@
   .views-exposed-form{
     position: relative;
     overflow: hidden;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 1px;
   }
   label{
     font-family: arial;
@@ -75,7 +75,7 @@
   float: none;
   position: absolute;
   top: 65px;
-  left: 304px;
+  left: 295px;
   input{
     border: 1px solid #b8b8b8;
     @include def-border-radius(3px);
@@ -120,7 +120,7 @@
   float: none;
   position: absolute;
   top: 0px;
-  left: 304px;
+  left: 295px;
   & > label{
     margin: 0px 0px 5px 0px;
     font-weight: bold;
@@ -131,7 +131,7 @@
   float: none;
   position: absolute;
   top: 0px;
-  left: 600px;
+  left: 590px;
   & > label{
     margin: 0px 0px 5px 0px;
     font-weight: bold;
@@ -196,7 +196,7 @@ input[type="checkbox"]:checked + label:before {
   width: 97px;
   margin: 4px 0px 0px 0px;
   .form-item-field-color-tid &{
-    width: 100px;
+    width: 105px;
   }
   & > label{
     //text-align: center;

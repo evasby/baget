@@ -668,8 +668,8 @@ textarea::-webkit-input-placeholder {
 }
 .galitem_image .flag-wrapper {
   position: absolute;
-  top: 147px;
-  right: 195px;
+  top: 20px;
+  right: 190px;
   opacity: 0;
 }
 .flag-wrapper .flag-action {
@@ -849,7 +849,7 @@ textarea::-webkit-input-placeholder {
 
 .header {
   overflow: hidden;
-  padding: 34px 0px 10px 0px;
+  padding: 15px 0px 10px 0px;
 }
 .header_logo {
   display: block;
@@ -1163,8 +1163,9 @@ textarea::-webkit-input-placeholder {
 .search {
   background-color: #f3f2ed;
   margin: 0px -23px 4px -23px;
-  padding: 3px 103px 3px 23px;
+  padding: 5px 103px 5px 23px;
   overflow: hidden;
+  height: 39px;
 }
 .search_wrap {
   float: left;
@@ -1176,25 +1177,53 @@ textarea::-webkit-input-placeholder {
   background-color: #fff;
   padding-left: 10px;
   height: 24px;
+  margin-top: 6px;
 }
 .search_link {
   float: right;
-  color: #7e7a6c;
+  color: #fdfcfb;
   font-family: arial;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 3px;
+  position: relative;
+  display: block;
+  background-color: #D19683;
+  padding: 10px 35px 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .search_link:visited {
-  color: #7e7a6c;
+  color: #fdfcfb;
 }
 .search_link:hover {
-  color: #7e7a6c;
+  color: #fdfcfb;
 }
 .search_link:active {
-  color: #7e7a6c;
+  color: #fdfcfb;
 }
 .search_link:focus {
-  color: #7e7a6c;
+  color: #fdfcfb;
+}
+.search_link:hover {
+  background-color: #EFC39F;
+}
+.search_link:after {
+  background: url("../image/gear.png") 0px 0px no-repeat;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 2px;
+  top: 1px;
 }
 .search_input {
   border: none;
@@ -1291,7 +1320,7 @@ textarea::-webkit-input-placeholder {
 .catready_link {
   position: relative;
   float: left;
-  margin: 0px 13px 13px 0px;
+  margin: 0px 12px 12px 0px;
   overflow: hidden;
 }
 .catready_wrap {
@@ -1684,7 +1713,7 @@ textarea::-webkit-input-placeholder {
 }
 .catitem_descr {
   padding: 0px 23px 0px 23px;
-  height: 170px;
+  height: 240px;
 }
 .catitem_descr p {
   font-family: arial;
@@ -2198,10 +2227,14 @@ textarea::-webkit-input-placeholder {
   width: 100%;
   border: 1px solid #dad9d9;
 }
+.order .webform-component--descr textarea {
+  padding: 5px 0px 0px 12px;
+  border: 1px solid #dad9d9;
+}
 .order .form-actions {
-  position: absolute;
-  bottom: 0px;
-  left: 180px;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  position: relative;
 }
 .order .form-actions input {
   background-color: #fdfcfb;
@@ -3295,7 +3328,7 @@ textarea::-webkit-input-placeholder {
 .view-filters .views-exposed-form {
   position: relative;
   overflow: hidden;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 1px;
 }
 .view-filters label {
   font-family: arial;
@@ -3309,7 +3342,7 @@ textarea::-webkit-input-placeholder {
   float: none;
   position: absolute;
   top: 65px;
-  left: 304px;
+  left: 295px;
 }
 #edit-field-art-value-wrapper input {
   border: 1px solid #b8b8b8;
@@ -3364,7 +3397,7 @@ textarea::-webkit-input-placeholder {
   float: none;
   position: absolute;
   top: 0px;
-  left: 304px;
+  left: 295px;
 }
 #edit-field-material-tid-wrapper > label {
   margin: 0px 0px 5px 0px;
@@ -3376,7 +3409,7 @@ textarea::-webkit-input-placeholder {
   float: none;
   position: absolute;
   top: 0px;
-  left: 600px;
+  left: 590px;
 }
 #edit-field-color-tid-wrapper > label {
   margin: 0px 0px 5px 0px;
@@ -3450,7 +3483,7 @@ input[type="checkbox"]:checked + label:before {
   margin: 4px 0px 0px 0px;
 }
 .form-item-field-color-tid .bef-checkboxes .form-type-bef-checkbox {
-  width: 100px;
+  width: 105px;
 }
 .bef-checkboxes .form-type-bef-checkbox > label {
   line-height: 0.8;
@@ -3991,7 +4024,8 @@ input[type="checkbox"]:checked + label:before {
 }
 .follow_list {
   background-color: #ebebeb;
-  padding: 8px 85px 10px 90px;
+  padding: 12px 85px 0px 90px;
+  height: 29px;
   text-align: justify;
   line-height: 0;
   font-size: 1px;
@@ -4020,6 +4054,7 @@ input[type="checkbox"]:checked + label:before {
   position: relative;
   font-family: arial;
   font-size: 11px;
+  display: block;
   color: #4b4a4a;
   text-decoration: none;
   *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="before" );
@@ -4044,7 +4079,7 @@ input[type="checkbox"]:checked + label:before {
   height: 30px;
   position: absolute;
   left: -42px;
-  top: -9px;
+  top: -7px;
 }
 .follow_link .before {
   background: url("../image/social.png") 30px 0px no-repeat;
@@ -4052,7 +4087,7 @@ input[type="checkbox"]:checked + label:before {
   height: 30px;
   position: absolute;
   left: -42px;
-  top: -9px;
+  top: -7px;
 }
 .follow_link__vk .before {
   background-position: 0px 0px;
