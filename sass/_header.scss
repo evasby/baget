@@ -43,29 +43,31 @@
       padding-left: 20px;
       color: #333333;
       line-height: 1.1;
-      &:before{
+    }
+  }
+  &_subway{
+    &:before{
+      background: url("../image/sub.png") 0px 0px no-repeat;
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 12px;
+      position: absolute;
+      left: -1px;
+      top: 2px;
+    }
+    @include old-ie{
+      *zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.appendChild( document.createElement("small") ).className="before"
+      );
+      .before{
         background: url("../image/sub.png") 0px 0px no-repeat;
-        content: "";
-        display: inline-block;
         width: 20px;
-        height: 12px;
+        height: 12px;      
         position: absolute;
         left: -1px;
-        top: 2px;
-      }
-      @include old-ie{
-        *zoom: expression(
-          this.runtimeStyle.zoom="1",
-          this.appendChild( document.createElement("small") ).className="before"
-        );
-        .before{
-          background: url("../image/sub.png") 0px 0px no-repeat;
-          width: 20px;
-          height: 12px;      
-          position: absolute;
-          left: -1px;
-          top: 2px; 
-        }
+        top: 2px; 
       }
     }
   }
