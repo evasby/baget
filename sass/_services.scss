@@ -6,6 +6,7 @@
   }
   &_image{
     float: left;
+    display: block;
     img{
       display: block;
     }
@@ -28,5 +29,6 @@
     bottom: 0px;
     right: 0px;
     @include link(#7e7a6c, #7e7a6c);
+    line-height: 1.2;
   }
 }

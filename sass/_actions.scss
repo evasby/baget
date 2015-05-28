@@ -42,6 +42,10 @@
     text-decoration: none;
     @include def-border-radius(3px);
     @include link(#434342, #434342);
+    @include def-transition(background-color, 0.2s);
+    &:hover{
+      background-color: #f2f2f1;
+    }
   }
   .bx-wrapper {
     position: relative;
