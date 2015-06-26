@@ -1,6 +1,6 @@
 .catalogwidth{
   padding: 0px 0px 0px 30px;
-  overflow: hidden;
+  @include def-clearfix2();
   position: relative;
   &_list{
     width: 100%;
