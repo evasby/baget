@@ -1365,7 +1365,7 @@ textarea::-webkit-input-placeholder {
 .social {
   overflow: hidden;
   background-color: #ebebeb;
-  margin: 23px 0px 0px 23px;
+  margin: 10px 0px 0px 23px;
   padding: 4px 0px 4px 152px;
 }
 .social_link {
@@ -1859,7 +1859,7 @@ textarea::-webkit-input-placeholder {
   font-family: arial;
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 355px;
   margin: 10px 0 0;
   padding-left: 30px;
   overflow: hidden;
@@ -1950,7 +1950,7 @@ textarea::-webkit-input-placeholder {
   opacity: 1;*/
 }
 .galitem_extra {
-  padding: 23px 0px 0px 23px;
+  padding: 10px 0px 0px 23px;
 }
 .galitem_extralink {
   margin: 0px 0px 0px 7px;
