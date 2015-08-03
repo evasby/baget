@@ -1761,7 +1761,7 @@ textarea::-webkit-input-placeholder {
 }
 .catitem_descr {
   padding: 0px 23px 0px 23px;
-  height: 192px;
+  height: 105px;
 }
 .catitem_descr p {
   font-family: arial;
@@ -1812,6 +1812,15 @@ textarea::-webkit-input-placeholder {
   height: 100%;
   background-color: #fdfcfb;
   opacity: 1;*/
+}
+.catitem_extra {
+  padding: 10px 0px 0px 23px;
+}
+.catitem_extralink {
+  margin: 0px 0px 0px 7px;
+}
+.catitem_extralink:first-child {
+  margin: 0px 0px 0px 0px;
 }
 
 .galitem {

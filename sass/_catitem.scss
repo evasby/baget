@@ -41,7 +41,7 @@
   }
   &_descr{
     padding: 0px 23px 0px 23px;
-    height: 192px;
+    height: 105px;
     p{
       font-family: arial;
       line-height: 1.2;
@@ -74,5 +74,14 @@
     height: 100%;
     background-color: #fdfcfb;
     opacity: 1;*/
+  }
+  &_extra{
+    padding: 10px 0px 0px 23px;
+  }
+  &_extralink{
+    margin: 0px 0px 0px 7px;
+    &:first-child{
+      margin: 0px 0px 0px 0px;
+    }
   }
 }
