@@ -673,6 +673,9 @@ textarea::-webkit-input-placeholder {
   -o-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+  /*&.flag-waiting{
+  	@include def-opacity(1);
+  }*/
 }
 .gallery_item .flag-wrapper {
   display: none;
@@ -681,10 +684,10 @@ textarea::-webkit-input-placeholder {
   position: absolute;
   top: 20px;
   right: 190px;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
 }
 .flag-wrapper .flag-action {
   /*text-indent: -9999px;
@@ -745,12 +748,18 @@ textarea::-webkit-input-placeholder {
   color: #000000;
 }
 .galitem_image:hover .flag-wrapper {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
 }
 
+.flag-waiting a {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
 .flag-waiting .flag-throbber {
   position: absolute;
   bottom: 0px;

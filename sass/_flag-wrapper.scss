@@ -12,7 +12,7 @@
 		//top: 147px;
 		top: 20px;
 		right: 190px;
-		@include def-opacity(0);
+		@include def-opacity(0.3);
 	}
 	.flag-action{
 		/*text-indent: -9999px;
@@ -27,6 +27,9 @@
 		@include link(#000000, #000000);
 		text-decoration: none;
 	}
+	/*&.flag-waiting{
+		@include def-opacity(1);
+	}*/
 	.unflag-action{
 		position: relative;
 		/*&:before{
@@ -49,10 +52,13 @@
 		text-decoration: none;
 	}
 	.galitem_image:hover & {
-		@include def-opacity(0.5);
+		@include def-opacity(0.6);
 	}
 }
 .flag-waiting {
+	a{
+		@include def-opacity(1);
+	}
 	.flag-throbber {
 		position: absolute;
 		bottom: 0px;
