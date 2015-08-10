@@ -70,14 +70,15 @@ module.exports = function(grunt) {
         ftp_upload: {
             build: {
                 auth: {
-                    host: 'webformat.by',
+                    host: '86.57.251.170',
                     port: 21,
                     authKey: 'key1'
                 },
                 //src: ['css/all.css', 'css/all-old-ie.css', 'css/all.css.map', 'css/all-old-ie.css.map'],
                 src: ['css/all.css', 'css/all-old-ie.css'],
                 //dest: 'www/slav.webformat.by/sites/all/themes/slav/css',
-                dest: 'www/baget.webformat.by/sites/all/themes/baget/css',
+                //dest: 'www/baget.webformat.by/sites/all/themes/baget/css',
+                dest: '/public_html/sites/all/themes/baget/css',
                 exclusions: ['css/**/.DS_Store', 'css/**/Thumbs.db', 'dist/tmp']
             }
         },

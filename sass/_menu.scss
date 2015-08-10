@@ -9,6 +9,8 @@
     }
   }
   &_item{
+    width: 1%;
+    white-space:nowrap;
     display: table-cell;
     @include old-ie{
       *display: block;

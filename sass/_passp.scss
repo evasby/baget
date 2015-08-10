@@ -1,0 +1,46 @@
+.passp{
+  padding: 0px 0px 0px 30px;
+  &_wrap{
+    @include def-clearfix2();
+  }
+  &_item{
+    position: relative;
+    width: 212px;
+    text-align: center;
+    //height: 171px;
+    float: left;
+    //cursor: pointer;
+    margin: 16px 16px 0px 0px;
+    &:nth-child(4n){
+      margin: 16px 0px 0px 0px;
+    }
+    img{
+      display: block;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+  &_title{
+    //font-family: myriadsemibold;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 13px;
+    color: #434342;
+    text-transform: uppercase;
+    clear: both;
+    float: none;
+    overflow: hidden;
+    padding: 0px 0px 5px 0px;
+  }
+  &_more{
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+    padding: 6px 38px 13px 0px;
+    a{
+      font-family: arial;
+      font-size: 12px;
+      @include link(#333333, #333333);
+      text-decoration: none;
+    }
+  }
+}

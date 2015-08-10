@@ -996,6 +996,8 @@ textarea::-webkit-input-placeholder {
   width: 100%;
 }
 .menu_item {
+  width: 1%;
+  white-space: nowrap;
   display: table-cell;
 }
 .menu_link {
@@ -4455,6 +4457,74 @@ input[type="checkbox"]:checked + label:before {
 }
 .mycatalog_descr .breadcrumb {
   margin: -15px 0 5px;
+}
+
+.passp {
+  padding: 0px 0px 0px 30px;
+}
+.passp_wrap {
+  display: inline-block;
+  display: block;
+}
+.passp_wrap:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .passp_wrap {
+  height: 1%;
+}
+.passp_item {
+  position: relative;
+  width: 212px;
+  text-align: center;
+  float: left;
+  margin: 16px 16px 0px 0px;
+}
+.passp_item:nth-child(4n) {
+  margin: 16px 0px 0px 0px;
+}
+.passp_item img {
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+.passp_title {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 13px;
+  color: #434342;
+  text-transform: uppercase;
+  clear: both;
+  float: none;
+  overflow: hidden;
+  padding: 0px 0px 5px 0px;
+}
+.passp_more {
+  clear: both;
+  overflow: hidden;
+  text-align: right;
+  padding: 6px 38px 13px 0px;
+}
+.passp_more a {
+  font-family: arial;
+  font-size: 12px;
+  color: #333333;
+  text-decoration: none;
+}
+.passp_more a:visited {
+  color: #333333;
+}
+.passp_more a:hover {
+  color: #333333;
+}
+.passp_more a:active {
+  color: #333333;
+}
+.passp_more a:focus {
+  color: #333333;
 }
 
 /*# sourceMappingURL=all.css.map */
