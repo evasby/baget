@@ -989,7 +989,7 @@ textarea::-webkit-input-placeholder {
 
 .menu {
   background-color: #6b1740;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 0px 0px 0px;
 }
 .menu_list {
   display: table;
@@ -4525,6 +4525,155 @@ input[type="checkbox"]:checked + label:before {
 }
 .passp_more a:focus {
   color: #333333;
+}
+
+.newicons {
+  border: 1px solid #000000;
+  position: relative;
+  height: 508px;
+}
+.newicons_item {
+  width: 160px;
+  position: absolute;
+}
+.newicons_item__1 {
+  top: 35px;
+  left: 13px;
+}
+.newicons_item__2 {
+  top: 180px;
+  left: 13px;
+}
+.newicons_item__3 {
+  top: 325px;
+  left: 13px;
+}
+.newicons_item__4 {
+  top: 180px;
+  left: 209px;
+}
+.newicons_item__5 {
+  top: 180px;
+  left: 486px;
+}
+.newicons_item__6 {
+  top: 35px;
+  left: 780px;
+}
+.newicons_item__7 {
+  top: 180px;
+  left: 780px;
+}
+.newicons_item__8 {
+  top: 325px;
+  left: 780px;
+}
+.newicons_item__9 {
+  top: 58px;
+  left: 225px;
+}
+.newicons_item__10 {
+  top: 138px;
+  left: 325px;
+}
+.newicons_item__11 {
+  top: 263px;
+  left: 325px;
+}
+.newicons_item__12 {
+  top: 326px;
+  left: 225px;
+}
+.newicons_item__13 {
+  top: 58px;
+  left: 515px;
+}
+.newicons_item__14 {
+  top: 138px;
+  left: 615px;
+}
+.newicons_item__15 {
+  top: 263px;
+  left: 615px;
+}
+.newicons_item__16 {
+  top: 326px;
+  left: 515px;
+}
+.newicons_text {
+  text-align: center;
+  font-family: arial;
+  font-size: 12px;
+  padding: 25px 0px 0px 0px;
+  background: url("../image/newcataloghr.png") no-repeat 50% 11px;
+}
+.newicons_text__mini {
+  padding: 20px 8px 0px 8px;
+  font-size: 9px;
+  background-position: 50% 8px;
+  background-size: 85%;
+}
+.newicons_image {
+  width: 73px;
+  height: 73px;
+  margin: 0 auto;
+  border: 2px solid #E0BEA4;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.newicons_image__1 {
+  background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+}
+.newicons_image__2 {
+  background: url(../image/newicons/icon2.png) 50% 50% no-repeat;
+}
+.newicons_image__3 {
+  background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+}
+.newicons_image__4 {
+  background: url(../image/newicons/icon5.png) 50% 50% no-repeat;
+}
+.newicons_image__5 {
+  background: url(../image/newicons/icon12.png) 50% 50% no-repeat;
+}
+.newicons_image__6 {
+  background: url(../image/newicons/icon6.png) 50% 50% no-repeat;
+}
+.newicons_image__7 {
+  background: url(../image/newicons/icon10.png) 50% 50% no-repeat;
+}
+.newicons_image__8 {
+  background: url(../image/newicons/icon16.png) 50% 50% no-repeat;
+}
+.newicons_image__9 {
+  background: url(../image/newicons/icon15.png) 50% 50% no-repeat;
+}
+.newicons_image__10 {
+  background: url(../image/newicons/icon13.png) 50% 50% no-repeat;
+}
+.newicons_image__11 {
+  background: url(../image/newicons/icon7.png) 50% 50% no-repeat;
+}
+.newicons_image__12 {
+  background: url(../image/newicons/icon14.png) 50% 50% no-repeat;
+}
+.newicons_image__13 {
+  background: url(../image/newicons/icon3.png) 50% 50% no-repeat;
+}
+.newicons_image__14 {
+  background: url(../image/newicons/icon8.png) 50% 50% no-repeat;
+}
+.newicons_image__15 {
+  background: url(../image/newicons/icon4.png) 50% 50% no-repeat;
+}
+.newicons_image__16 {
+  background: url(../image/newicons/icon9.png) 50% 50% no-repeat;
+}
+.newicons_image__mini {
+  width: 50px;
+  height: 50px;
+  background-size: 60%;
 }
 
 /*# sourceMappingURL=all.css.map */

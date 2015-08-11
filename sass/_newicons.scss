@@ -1,0 +1,150 @@
+.newicons{
+    border: 1px solid #000000;
+    position: relative;
+    height: 508px;
+  &_item{
+    width: 160px;
+    position: absolute;
+    //border: 1px solid #000000;
+    &__1{
+      top: 35px;
+      left: 13px;
+    }
+    &__2{
+      top: 180px;
+      left: 13px;
+    }
+    &__3{
+      top: 325px;
+      left: 13px;
+    }
+    &__4{
+      top: 180px;
+      left: 209px;
+    }
+    &__5{
+      top: 180px;
+      left: 486px;
+    }
+    &__6{
+      top: 35px;
+      left: 780px;
+    }
+    &__7{
+      top: 180px;
+      left: 780px;
+    }
+    &__8{
+      top: 325px;
+      left: 780px;
+    }
+    &__9{
+      top: 58px;
+      left: 225px;
+    }
+    &__10{
+      top: 138px;
+      left: 325px;
+    }
+    &__11{
+      top: 263px;
+      left: 325px;
+    }
+    &__12{
+      top: 326px;
+      left: 225px;
+    }
+
+    &__13{
+      top: 58px;
+      left: 515px;
+    }
+    &__14{
+      top: 138px;
+      left: 615px;
+    }
+    &__15{
+      top: 263px;
+      left: 615px;
+    }
+    &__16{
+      top: 326px;
+      left: 515px;
+    }
+
+
+  }
+  &_text{
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    padding: 25px 0px 0px 0px;
+    background: url('../image/newcataloghr.png') no-repeat 50% 11px;
+    &__mini{
+      padding: 20px 8px 0px 8px;
+      font-size: 9px;
+      background-position: 50% 8px;
+      background-size: 85%;
+    }
+  }
+  &_image{
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+    border: 2px solid #E0BEA4;
+    @include def-border-radius(10px);
+    &__1{
+      background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+    }
+    &__2{
+      background: url(../image/newicons/icon2.png) 50% 50% no-repeat;
+    }
+    &__3{
+      background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+    }
+    &__4{
+      background: url(../image/newicons/icon5.png) 50% 50% no-repeat;
+    }
+    &__5{
+      background: url(../image/newicons/icon12.png) 50% 50% no-repeat;
+    }
+    &__6{
+      background: url(../image/newicons/icon6.png) 50% 50% no-repeat;
+    }
+    &__7{
+      background: url(../image/newicons/icon10.png) 50% 50% no-repeat;
+    }
+    &__8{
+      background: url(../image/newicons/icon16.png) 50% 50% no-repeat;
+    }
+    &__9{
+      background: url(../image/newicons/icon15.png) 50% 50% no-repeat;
+    }
+    &__10{
+      background: url(../image/newicons/icon13.png) 50% 50% no-repeat;
+    }
+    &__11{
+      background: url(../image/newicons/icon7.png) 50% 50% no-repeat;
+    }
+    &__12{
+      background: url(../image/newicons/icon14.png) 50% 50% no-repeat;
+    }
+    &__13{
+      background: url(../image/newicons/icon3.png) 50% 50% no-repeat;
+    }
+    &__14{
+      background: url(../image/newicons/icon8.png) 50% 50% no-repeat;
+    }
+    &__15{
+      background: url(../image/newicons/icon4.png) 50% 50% no-repeat;
+    }
+    &__16{
+      background: url(../image/newicons/icon9.png) 50% 50% no-repeat;
+    }
+    &__mini{
+      width: 50px;
+      height: 50px;
+      background-size: 60%;
+    }
+  }
+}
