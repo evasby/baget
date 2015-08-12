@@ -39,13 +39,17 @@
   &_sub{
     padding: 0px 0px 11px 0px;
     p{
-      position: relative;
-      padding-left: 20px;
       color: #333333;
-      line-height: 1.1;
+      line-height: 1;
+    }
+    a{
+      line-height: 1;
     }
   }
   &_subway{
+    position: relative;
+    padding-left: 20px;
+    margin-top: 5px;
     &:before{
       background: url("../image/sub.png") 0px 0px no-repeat;
       content: "";

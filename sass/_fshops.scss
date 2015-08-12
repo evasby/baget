@@ -53,5 +53,10 @@
         top: 2px;   
       }
     }
+    &__none{
+      &:before{
+        background: url("../image/sub3.png") 0px 0px no-repeat;
+      }
+    }
   }
 }

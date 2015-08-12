@@ -912,12 +912,16 @@ textarea::-webkit-input-placeholder {
   padding: 0px 0px 11px 0px;
 }
 .header_sub p {
-  position: relative;
-  padding-left: 20px;
   color: #333333;
-  line-height: 1.1;
+  line-height: 1;
+}
+.header_sub a {
+  line-height: 1;
 }
 .header_subway {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 5px;
   *zoom: expression( this.runtimeStyle.zoom="1", this.appendChild( document.createElement("small") ).className="before" );
 }
 .header_subway:before {
@@ -1413,6 +1417,7 @@ textarea::-webkit-input-placeholder {
   float: left;
   margin: 0px 12px 12px 0px;
   overflow: hidden;
+  border: 1px solid #ebebeb;
 }
 .catready_wrap {
   position: absolute;
@@ -1813,16 +1818,16 @@ textarea::-webkit-input-placeholder {
 }
 .catitem_art {
   text-align: center;
-  padding: 7px 0px 10px 0px;
+  padding: 7px 0px 6px 0px;
   font-size: 12px;
 }
 .catitem_technic {
   font-size: 12px;
-  padding: 0px 0px 10px 23px;
+  padding: 0px 0px 0px 23px;
 }
 .catitem_descr {
   padding: 0px 23px 0px 23px;
-  height: 105px;
+  height: 93px;
 }
 .catitem_descr p {
   font-family: arial;
@@ -4438,6 +4443,9 @@ input[type="checkbox"]:checked + label:before {
   left: -21px;
   top: 2px;
 }
+.fshops_subway__none:before {
+  background: url("../image/sub3.png") 0px 0px no-repeat;
+}
 
 .fcontacts {
   float: left;
@@ -4667,7 +4675,6 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .newicons {
-  border: 1px solid #000000;
   position: relative;
   height: 508px;
 }
@@ -4763,27 +4770,51 @@ input[type="checkbox"]:checked + label:before {
 }
 .newicons_image__1 {
   background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__2 {
   background: url(../image/newicons/icon2.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__3 {
   background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__4 {
   background: url(../image/newicons/icon5.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__5 {
   background: url(../image/newicons/icon12.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__6 {
   background: url(../image/newicons/icon6.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__7 {
   background: url(../image/newicons/icon10.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__8 {
   background: url(../image/newicons/icon16.png) 50% 50% no-repeat;
+  -webkit-box-shadow: -2px -2px 5px 0px #e0bea4;
+  -moz-box-shadow: -2px -2px 5px 0px #e0bea4;
+  box-shadow: -2px -2px 5px 0px #e0bea4;
 }
 .newicons_image__9 {
   background: url(../image/newicons/icon15.png) 50% 50% no-repeat;
@@ -4813,6 +4844,26 @@ input[type="checkbox"]:checked + label:before {
   width: 50px;
   height: 50px;
   background-size: 60%;
+}
+
+.catsize_row {
+  margin: 0px 0px 3px 0px;
+  overflow: hidden;
+  border: 1px solid #d8d7d6;
+  background-color: #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 177px;
+}
+.catsize_left {
+  float: left;
+  width: 120px;
+  padding: 2px 0px 2px 10px;
+}
+.catsize_right {
+  margin-left: 120px;
+  padding: 2px 0px 2px 0px;
 }
 
 /*# sourceMappingURL=all-old-ie.css.map */

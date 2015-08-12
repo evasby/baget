@@ -1,5 +1,5 @@
 .newicons{
-    border: 1px solid #000000;
+    //border: 1px solid #000000;
     position: relative;
     height: 508px;
   &_item{
@@ -95,27 +95,51 @@
     @include def-border-radius(10px);
     &__1{
       background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__2{
       background: url(../image/newicons/icon2.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__3{
       background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__4{
       background: url(../image/newicons/icon5.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__5{
       background: url(../image/newicons/icon12.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__6{
       background: url(../image/newicons/icon6.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__7{
       background: url(../image/newicons/icon10.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__8{
       background: url(../image/newicons/icon16.png) 50% 50% no-repeat;
+      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
     }
     &__9{
       background: url(../image/newicons/icon15.png) 50% 50% no-repeat;
