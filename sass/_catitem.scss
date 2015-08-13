@@ -32,20 +32,23 @@
   }
   &_art{
     text-align: center;
-    padding: 7px 0px 6px 0px;
+    padding: 7px 0px 10px 0px;
     font-size: 12px;
   }
   &_technic{
     font-size: 12px;
     padding: 0px 0px 0px 23px;
+    float: left;
+    width: 177px;
   }
   &_descr{
-    padding: 0px 23px 0px 23px;
-    height: 93px;
+    padding: 5px 23px 0px 23px;
+    height: 83px;
     p{
       font-family: arial;
       line-height: 1.2;
       margin: 0px;
+      font-size: 13px;
     }
   }
   &_link{
@@ -74,6 +77,8 @@
     height: 100%;
     background-color: #fdfcfb;
     opacity: 1;*/
+    @include def-clearfix2();
+
   }
   &_extra{
     padding: 10px 0px 0px 23px;
@@ -82,6 +87,16 @@
     margin: 0px 0px 0px 7px;
     &:first-child{
       margin: 0px 0px 0px 0px;
+    }
+  }
+  &_check{
+    display: none;
+  }
+  &_check2{
+    margin: 0px 0px 0px 220px;
+    display: none;
+    input[type="checkbox"] + label::before{
+      top: -1px;
     }
   }
 }

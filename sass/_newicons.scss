@@ -3,8 +3,11 @@
     position: relative;
     height: 508px;
   &_item{
+    display: block;
     width: 160px;
     position: absolute;
+    text-decoration: none;
+    @include link(#040404, #040404);
     //border: 1px solid #000000;
     &__1{
       top: 35px;
@@ -93,68 +96,119 @@
     margin: 0 auto;
     border: 2px solid #E0BEA4;
     @include def-border-radius(10px);
+    @include def-transition(box-shadow, 0.2s);
     &__1{
       background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      .newicons_item:hover &{
+        -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      }
     }
     &__2{
       background: url(../image/newicons/icon2.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
     }
     &__3{
       background: url(../image/newicons/icon1.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      .newicons_item:hover &{
+        -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      }
     }
     &__4{
       background: url(../image/newicons/icon5.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
     }
     &__5{
       background: url(../image/newicons/icon12.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      .newicons_item:hover &{
+        -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      }
     }
     &__6{
       background: url(../image/newicons/icon6.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      .newicons_item:hover &{
+        -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      }
     }
     &__7{
       background: url(../image/newicons/icon10.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      .newicons_item:hover &{
+        -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      }
     }
     &__8{
       background: url(../image/newicons/icon16.png) 50% 50% no-repeat;
-      -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
-      box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      -webkit-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      box-shadow: 2px 2px 5px 0px rgba(224,190,164,1);
+      .newicons_item:hover &{
+        -webkit-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+        box-shadow: -2px -2px 5px 0px rgba(224,190,164,1);
+      }
     }
     &__9{
       background: url(../image/newicons/icon15.png) 50% 50% no-repeat;
+      .newicons_item:hover &{
+        -webkit-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+      }
     }
     &__10{
       background: url(../image/newicons/icon13.png) 50% 50% no-repeat;
+      .newicons_item:hover &{
+        -webkit-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+      }
     }
     &__11{
       background: url(../image/newicons/icon7.png) 50% 50% no-repeat;
+      .newicons_item:hover &{
+        -webkit-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+      }
     }
     &__12{
       background: url(../image/newicons/icon14.png) 50% 50% no-repeat;
     }
     &__13{
       background: url(../image/newicons/icon3.png) 50% 50% no-repeat;
+      .newicons_item:hover &{
+        -webkit-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+      }
     }
     &__14{
       background: url(../image/newicons/icon8.png) 50% 50% no-repeat;
@@ -164,6 +218,11 @@
     }
     &__16{
       background: url(../image/newicons/icon9.png) 50% 50% no-repeat;
+      .newicons_item:hover &{
+        -webkit-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        -moz-box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+        box-shadow: -1px -1px 3px 0px rgba(224,190,164,1);
+      }
     }
     &__mini{
       width: 50px;

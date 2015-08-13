@@ -74,12 +74,12 @@
   width: 280px;
   float: none;
   position: absolute;
-  top: 65px;
+  top: 57px;
   left: 295px;
   input{
     border: 1px solid #b8b8b8;
     @include def-border-radius(3px);
-    height: 23px;
+    height: 31px;
     width: 278px;
     margin: 5px 0px 20px 0px;
     @include def-transition(background-color, 0.2s);
