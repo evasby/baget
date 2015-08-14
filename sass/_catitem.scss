@@ -93,10 +93,12 @@
     display: none;
   }
   &_check2{
-    margin: 0px 0px 0px 220px;
+    margin: 0px 0px 0px 234px;
+    padding: 21px 0px 0px 0px;
     display: none;
     input[type="checkbox"] + label::before{
       top: -1px;
+      left: -2px;
     }
   }
 }

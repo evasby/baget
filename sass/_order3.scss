@@ -1,0 +1,103 @@
+.order3{
+  position: relative;
+  height: 500px;
+  &_title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 0px 30px 0px;
+  }
+  &_header{
+    height: 37px;
+    background-color: #eaeae9;
+  }
+  form{
+    margin: 0px 27px;
+  }
+  .form-item, .form-actions{
+    margin: 0px 0px 2px 0px;
+  }
+  .webform-component-textfield input{
+    height: 31px;
+    width: 508px;
+    border: 1px solid #dad9d9;
+    padding-left: 5px;
+    &.error{
+      background-color: #fabbcf;
+    }
+  }
+  .webform-component-email input{
+    height: 31px;
+    padding-left: 13px;
+    border: 1px solid #dad9d9;
+    width: 500px;
+  }
+  .webform-component-number input{
+    height: 31px;
+    padding-left: 13px;
+    border: 1px solid #dad9d9;
+    width: 500px;
+  }
+  .webform-component-select{
+    //margin-right: -4px;
+  }
+  .webform-component-select select{
+    height: 31px;
+    width: 100%;
+    border: 1px solid #dad9d9;
+  }
+  .webform-component--descr textarea{
+    padding: 5px 0px 0px 12px;
+    border: 1px solid #dad9d9;
+  }
+  .webform-component--artikuly p{
+    color: #bcbcbc;
+  }
+  .form-actions{
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    position: relative;
+  }
+  .form-actions input{
+    background-color: #fdfcfb;
+    border: 1px solid #e5e4e4;
+    width: 209px;
+    font-size: 17px;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    font-family: arial;
+    padding: 7px 0px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .messages.error{
+    display: none;
+  }
+  &_confirmation{
+    p{
+      text-align: center;
+      padding: 0px 15px;
+    }
+  }
+}
+#cboxWrapper{
+  background: none;
+  background-color: inherit;
+  border-radius: 0px;
+}
+#cboxContent{
+
+}
+#cboxLoadedContent {
+    margin-bottom: 0px;
+}
+#cboxClose{
+  top: 4px;
+  right: 4px;
+  background: url('../image/order-close.png') no-repeat;
+  width: 28px;
+  height: 28px;
+}
+#cboxClose:hover {
+  background-position: 0px 0px;
+}
