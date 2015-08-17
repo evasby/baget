@@ -1,8 +1,43 @@
 .services{
+  @include def-clearfix2();
+  padding: 0px 0px 0px 30px;
   &_item{
-    overflow: hidden;
+    /*overflow: hidden;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 15px;*/
+    width: 210px;
+    border: 1px solid #dbdada;
+    @include def-border-radius(3px);
+    float: left;
+    margin: 0px 13px 13px 0px;
+    &:nth-child(4n){
+      margin: 0px 0px 13px 0px;
+    }
+  }
+  &_link{
+    display: block;
+    padding: 19px 19px 0px 19px;
+    width: 172px;
+    //height: 195px;
+    font-family: myriadsemibold;
+    @include link(#6b1740, #6b1740);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  &_name{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: url('../image/newcataloghr.png') 50% 6px no-repeat;
+    padding: 0px 0px 0px 0px;
+    height: 75px;
+    width: 210px;
+    margin: 0px 0px 0px 0px;
+    @include def-transition(background-position, 0.2s);
+    .services_link:hover &{
+      background-position: 50% 8px;
+    }
   }
   &_image{
     float: left;
@@ -24,11 +59,11 @@
     font-weight: bold;
     margin: 0px 0px 10px 0px;
   }
-  &_link{
+  /*&_link{
     position: absolute;
     bottom: 0px;
     right: 0px;
     @include link(#7e7a6c, #7e7a6c);
     line-height: 1.2;
-  }
+  }*/
 }
