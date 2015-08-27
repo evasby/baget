@@ -870,6 +870,7 @@ textarea::-webkit-input-placeholder {
 .header_info {
   margin: 0px 0px 0px 56px;
   float: left;
+  width: 210px;
 }
 .header_slang {
   width: 369px;
