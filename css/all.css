@@ -7,7 +7,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+caption, tbody, tfoot, thead,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -4486,6 +4486,7 @@ input[type="checkbox"]:checked + label:before {
   font-family: arial;
   font-size: 15px;
   color: #333;
+  margin-bottom: 10px;
 }
 .fcontacts_skype {
   padding: 0px 0px 0px 22px;
@@ -4494,6 +4495,7 @@ input[type="checkbox"]:checked + label:before {
   font-family: arial;
   font-size: 15px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .wf {
