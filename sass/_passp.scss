@@ -30,6 +30,13 @@
     float: none;
     overflow: hidden;
     padding: 0px 0px 5px 0px;
+    a{
+      @include link(#434342, #434342);
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
   &_more{
     clear: both;

@@ -3311,6 +3311,25 @@ textarea::-webkit-input-placeholder {
   overflow: hidden;
   padding: 0px 0px 5px 0px;
 }
+.gallery_title a {
+  color: #434342;
+  text-decoration: none;
+}
+.gallery_title a:visited {
+  color: #434342;
+}
+.gallery_title a:hover {
+  color: #434342;
+}
+.gallery_title a:active {
+  color: #434342;
+}
+.gallery_title a:focus {
+  color: #434342;
+}
+.gallery_title a:hover {
+  text-decoration: underline;
+}
 .gallery_more {
   clear: both;
   overflow: hidden;
@@ -3389,6 +3408,25 @@ textarea::-webkit-input-placeholder {
   float: none;
   overflow: hidden;
   padding: 0px 0px 5px 0px;
+}
+.catalogwidth_title a {
+  color: #434342;
+  text-decoration: none;
+}
+.catalogwidth_title a:visited {
+  color: #434342;
+}
+.catalogwidth_title a:hover {
+  color: #434342;
+}
+.catalogwidth_title a:active {
+  color: #434342;
+}
+.catalogwidth_title a:focus {
+  color: #434342;
+}
+.catalogwidth_title a:hover {
+  text-decoration: underline;
 }
 .catalogwidth_more {
   clear: both;
@@ -4764,6 +4802,25 @@ input[type="checkbox"]:checked + label:before {
   float: none;
   overflow: hidden;
   padding: 0px 0px 5px 0px;
+}
+.passp_title a {
+  color: #434342;
+  text-decoration: none;
+}
+.passp_title a:visited {
+  color: #434342;
+}
+.passp_title a:hover {
+  color: #434342;
+}
+.passp_title a:active {
+  color: #434342;
+}
+.passp_title a:focus {
+  color: #434342;
+}
+.passp_title a:hover {
+  text-decoration: underline;
 }
 .passp_more {
   clear: both;
