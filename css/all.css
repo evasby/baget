@@ -3765,7 +3765,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   float: left;
-  margin: 4px 0px 0px 8px;
+  margin: 4px 0px 0px 7px;
   width: 85px;
   height: 82px;
   -webkit-transition: border-color 0.2s ease-in-out;
@@ -3775,7 +3775,7 @@ input[type="checkbox"]:checked + label:before {
   transition: border-color 0.2s ease-in-out;
 }
 .cslidermin_pager a:first-child img {
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 0px 1px;
 }
 .cslidermin_pager .active img {
   border: 1px solid #6b1740;

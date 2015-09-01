@@ -6,13 +6,13 @@
       border: 1px solid #fdfcfb;
       @include def-border-radius(3px);
       float: left;
-      margin: 4px 0px 0px 8px;
+      margin: 4px 0px 0px 7px;
       width: 85px;
       height: 82px;
       @include def-transition(border-color, 0.2s);
     }
     & a:first-child img{
-      margin: 5px 0px 0px 0px;
+      margin: 5px 0px 0px 1px;
     }
     & .active img{
       border: 1px solid #6b1740;
